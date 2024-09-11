@@ -1,0 +1,9 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/Home/HomePage",
+    "pages/My/My",
+    "pages/Animation/Animation",
+    "pages/Canvas/Canvas"
+  ]
+}

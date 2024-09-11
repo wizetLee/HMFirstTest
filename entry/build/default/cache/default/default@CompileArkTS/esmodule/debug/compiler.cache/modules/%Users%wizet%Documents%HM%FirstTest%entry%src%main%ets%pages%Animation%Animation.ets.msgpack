@@ -1,0 +1,334 @@
+Ôr@Ÿªassertions¤code´customTransformCache¬dependencies¢id¤meta±moduleSideEffects¬originalCode±originalSourcemap«resolvedIds®sourcemapChainµsyntheticNamedExportsµtransformDependencies®transformFiles¨cacheAstÔrAÚ"use strict";
+if (!("finalizeConstruction" in ViewPU.prototype)) {
+    Reflect.set(ViewPU.prototype, "finalizeConstruction", () => { });
+}
+class Animation extends ViewPU {
+    constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
+        super(parent, __localStorage, elmtId, extraInfo);
+        if (typeof paramsLambda === "function") {
+            this.paramsGenerator_ = paramsLambda;
+        }
+        this.componentName = "Animation";
+        this.__isAnimation = new ObservedPropertySimplePU(false, this, "isAnimation");
+        this.__translateX1 = new ObservedPropertySimplePU(-100, this, "translateX1");
+        this.__translateX2 = new ObservedPropertySimplePU(-100, this, "translateX2");
+        this.__translateX3 = new ObservedPropertySimplePU(-100, this, "translateX3");
+        this.setInitiallyProvidedValue(params);
+        this.finalizeConstruction();
+    }
+    setInitiallyProvidedValue(params) {
+        if (params.componentName !== undefined) {
+            this.componentName = params.componentName;
+        }
+        if (params.isAnimation !== undefined) {
+            this.isAnimation = params.isAnimation;
+        }
+        if (params.translateX1 !== undefined) {
+            this.translateX1 = params.translateX1;
+        }
+        if (params.translateX2 !== undefined) {
+            this.translateX2 = params.translateX2;
+        }
+        if (params.translateX3 !== undefined) {
+            this.translateX3 = params.translateX3;
+        }
+    }
+    updateStateVars(params) {
+    }
+    purgeVariableDependenciesOnElmtId(rmElmtId) {
+        this.__isAnimation.purgeDependencyOnElmtId(rmElmtId);
+        this.__translateX1.purgeDependencyOnElmtId(rmElmtId);
+        this.__translateX2.purgeDependencyOnElmtId(rmElmtId);
+        this.__translateX3.purgeDependencyOnElmtId(rmElmtId);
+    }
+    aboutToBeDeleted() {
+        this.__isAnimation.aboutToBeDeleted();
+        this.__translateX1.aboutToBeDeleted();
+        this.__translateX2.aboutToBeDeleted();
+        this.__translateX3.aboutToBeDeleted();
+        SubscriberManager.Get().delete(this.id__());
+        this.aboutToBeDeletedInternal();
+    }
+    //Entry ç”Ÿå‘½å‘¨æœŸ
+    onPageShow() {
+        console.log(`${this.componentName} - onPageShow`);
+    }
+    onPageHide() {
+        console.log(`${this.componentName} - onPageHide`);
+    }
+    //Component ç”Ÿå‘½å‘¨æœŸ
+    aboutToAppear() {
+        console.log(`${this.componentName} - aboutToAppear`);
+    }
+    aboutToDisappear() {
+        console.log(`${this.componentName} - aboutToDisappear`);
+    }
+    // aboutToReuse(params: { [key: string]: Any }): void {
+    // }
+    aboutToRecycle() {
+        console.log(`${this.componentName} - aboutToRecycle`);
+    }
+    get isAnimation() {
+        return this.__isAnimation.get();
+    }
+    set isAnimation(newValue) {
+        this.__isAnimation.set(newValue);
+    }
+    get translateX1() {
+        return this.__translateX1.get();
+    }
+    set translateX1(newValue) {
+        this.__translateX1.set(newValue);
+    }
+    get translateX2() {
+        return this.__translateX2.get();
+    }
+    set translateX2(newValue) {
+        this.__translateX2.set(newValue);
+    }
+    get translateX3() {
+        return this.__translateX3.get();
+    }
+    set translateX3(newValue) {
+        this.__translateX3.set(newValue);
+    }
+    initialRender() {
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Column.create();
+            Column.width('100%');
+            Column.justifyContent(FlexAlign.Center);
+            Column.shadow(ShadowStyle.OUTER_DEFAULT_SM);
+            Column.layoutWeight(1);
+        }, Column);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            // è®¾ç½®åŠ¨ç”»éƒ¨åˆ† ---
+            Row.create();
+            // è®¾ç½®åŠ¨ç”»éƒ¨åˆ† ---
+            Row.height('20%');
+        }, Row);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Text.create('30');
+            Text.fontWeight(FontWeight.Bold);
+            Text.fontSize(16);
+            Text.fontColor(Color.White);
+            Text.textAlign(TextAlign.Center);
+            Text.borderRadius(10);
+            Text.backgroundColor(0xF56C6C);
+            Text.width(80);
+            Text.height(80);
+            Text.translate({ x: this.translateX1 });
+        }, Text);
+        Text.pop();
+        // è®¾ç½®åŠ¨ç”»éƒ¨åˆ† ---
+        Row.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Row.create();
+            Row.height('20%');
+        }, Row);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Text.create('60');
+            Context.animation({
+                duration: 3000,
+                iterations: 1,
+                playMode: PlayMode.Normal,
+                // expectedFrameRateRange: {
+                //   // è®¾ç½®å±žæ€§åŠ¨ç”»çš„å¸§çŽ‡èŒƒå›´
+                //   expected: 60, // è®¾ç½®åŠ¨ç”»çš„æœŸæœ›å¸§çŽ‡ä¸º60hz
+                //   min: 0, // è®¾ç½®å¸§çŽ‡èŒƒå›´
+                //   max: 120, // è®¾ç½®å¸§çŽ‡èŒƒå›´
+                // },
+            });
+            Text.fontWeight(FontWeight.Bold);
+            Text.fontSize(16);
+            Text.fontColor(Color.White);
+            Text.textAlign(TextAlign.Center);
+            Text.borderRadius(10);
+            Text.backgroundColor(0x008B8B);
+            Text.width(80);
+            Text.height(80);
+            Text.translate({ x: this.translateX3 });
+            Context.animation(null);
+        }, Text);
+        Text.pop();
+        Row.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Row.create();
+            Row.width('100%');
+            Row.justifyContent(FlexAlign.Center);
+            Row.shadow(ShadowStyle.OUTER_DEFAULT_SM);
+            Row.alignItems(VerticalAlign.Bottom);
+            Row.layoutWeight(1);
+        }, Row);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Button.createWithLabel('Start');
+            Button.id('PropertyAnimationStart');
+            Button.fontSize(14);
+            Button.fontWeight(500);
+            Button.margin({ bottom: 10, left: 5 });
+            Button.fontColor(Color.White);
+            Button.onClick(() => {
+                this.isAnimation = !this.isAnimation;
+                this.translateX3 = this.isAnimation ? 100 : -100;
+                Context.animateTo({
+                    duration: 3000,
+                    iterations: 1,
+                    playMode: PlayMode.Normal,
+                    expectedFrameRateRange: {
+                        // è®¾ç½®æ˜¾å¼åŠ¨ç”»çš„å¸§çŽ‡èŒƒå›´
+                        expected: 30,
+                        min: 0,
+                        max: 120, // è®¾ç½®å¸§çŽ‡èŒƒå›´
+                    },
+                }, () => {
+                    this.translateX1 = this.isAnimation ? 100 : -100;
+                });
+            });
+            Button.width('40%');
+            Button.height(40);
+            Button.shadow(ShadowStyle.OUTER_DEFAULT_LG);
+        }, Button);
+        Button.pop();
+        Row.pop();
+        Column.pop();
+    }
+    rerender() {
+        this.updateDirtyElements();
+    }
+    static getEntryName() {
+        return "Animation";
+    }
+}
+{
+    let routeNameNode = "Animation";
+    registerNamedRoute(() => new Animation(undefined, {}), routeNameNode, { bundleName: "com.example.firsttest", moduleName: "entry", pagePath: "pages/Animation/Animation", pageFullPath: "entry/src/main/ets/pages/Animation/Animation", integratedHsp: "false" });
+}
+//# sourceMappingURL=Animation.js.mapÂÙT/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Animation/Animation.etsÔrBš°belongModulePathªmoduleName±isLocalDependency¯isNodeEntryFile§pkgPath±belongProjectPath§pkgNameªpkgVersion±dependencyPkgInfo¯hostModulesInfoÙ)/Users/wizet/Documents/HM/FirstTest/entry¥entryÃÂÙ)/Users/wizet/Documents/HM/FirstTest/entryÙ#/Users/wizet/Documents/HM/FirstTest¥entry¥1.0.0Ô  ÃÚŸ@Entry({ routeName: "Animation" })
+@Component
+struct Animation {
+  componentName = "Animation"
+
+  //Entry ç”Ÿå‘½å‘¨æœŸ
+  onPageShow(): void {
+    console.log(`${this.componentName} - onPageShow`)
+  }
+
+  onPageHide(): void {
+    console.log(`${this.componentName} - onPageHide`)
+  }
+
+  //Component ç”Ÿå‘½å‘¨æœŸ
+  aboutToAppear(): void {
+    console.log(`${this.componentName} - aboutToAppear`)
+  }
+
+  aboutToDisappear(): void {
+    console.log(`${this.componentName} - aboutToDisappear`)
+  }
+
+  // aboutToReuse(params: { [key: string]: Any }): void {
+  // }
+  aboutToRecycle(): void {
+    console.log(`${this.componentName} - aboutToRecycle`)
+  }
+
+  @State isAnimation: boolean = false;
+  @State translateX1: number = -100;
+  @State translateX2: number = -100;
+  @State translateX3: number = -100;
+
+  build() {
+
+    Column() {
+      // è®¾ç½®åŠ¨ç”»éƒ¨åˆ† ---
+      Row() {
+        Text('30')
+          .fontWeight(FontWeight.Bold)
+          .fontSize(16)
+          .fontColor(Color.White)
+          .textAlign(TextAlign.Center)
+          .borderRadius(10)
+          .backgroundColor(0xF56C6C)
+          .width(80)
+          .height(80)
+          .translate({ x: this.translateX1 })
+      }
+      .height('20%')
+
+      Row() {
+        Text('60')
+          .fontWeight(FontWeight.Bold)
+          .fontSize(16)
+          .fontColor(Color.White)
+          .textAlign(TextAlign.Center)
+          .borderRadius(10)
+          .backgroundColor(0x008B8B)
+          .width(80)
+          .height(80)
+          .translate({ x: this.translateX3 })
+          .animation({
+            duration: 3000,
+            iterations: 1,
+            playMode: PlayMode.Normal,
+            // expectedFrameRateRange: {
+            //   // è®¾ç½®å±žæ€§åŠ¨ç”»çš„å¸§çŽ‡èŒƒå›´
+            //   expected: 60, // è®¾ç½®åŠ¨ç”»çš„æœŸæœ›å¸§çŽ‡ä¸º60hz
+            //   min: 0, // è®¾ç½®å¸§çŽ‡èŒƒå›´
+            //   max: 120, // è®¾ç½®å¸§çŽ‡èŒƒå›´
+            // },
+          })
+      }
+      .height('20%')
+
+      Row() {
+        Button('Start')
+          .id('PropertyAnimationStart')
+          .fontSize(14)
+          .fontWeight(500)
+          .margin({ bottom: 10, left: 5 })
+          .fontColor(Color.White)
+          .onClick(() => {
+
+            this.isAnimation = !this.isAnimation;
+            this.translateX3 = this.isAnimation ? 100 : -100;
+
+            animateTo({
+              duration: 3000,
+              iterations: 1,
+              playMode: PlayMode.Normal,
+              expectedFrameRateRange: {
+                // è®¾ç½®æ˜¾å¼åŠ¨ç”»çš„å¸§çŽ‡èŒƒå›´
+                expected: 30, // è®¾ç½®åŠ¨ç”»çš„æœŸæœ›å¸§çŽ‡ä¸º30hz
+                min: 0, // è®¾ç½®å¸§çŽ‡èŒƒå›´
+                max: 120, // è®¾ç½®å¸§çŽ‡èŒƒå›´
+              },
+            }, () => {
+              this.translateX1 = this.isAnimation ? 100 : -100;
+            })
+          })
+          .width('40%')
+          .height(40)
+          .shadow(ShadowStyle.OUTER_DEFAULT_LG)
+      }
+      .width('100%')
+      .justifyContent(FlexAlign.Center)
+      .shadow(ShadowStyle.OUTER_DEFAULT_SM)
+      .alignItems(VerticalAlign.Bottom)
+      .layoutWeight(1)
+    }
+    .width('100%')
+    .justifyContent(FlexAlign.Center)
+    .shadow(ShadowStyle.OUTER_DEFAULT_SM)
+    .layoutWeight(1)
+  }
+}ÀA’ÔrC–§version¤fileªsourceRoot§sources¥names¨mappings¬Animation.js ‘­Animation.etsÜ Ê’” ” ‘”   ’” ”( ’”:  ”? %“”: ”;  ”> #“”: ”;  ”> #“”:  ”;   ”>  #‘”   ’” ” ’” ” œ” ” ” ” ” ” ” ” ”) %”8 4”9 5”: 5’” ” ’” 
+” 
+œ” ” ” ” ” ” ” ” ”) %”8 4”9 5”: 5’” ” ’” ” ’” ” œ” ” ” ” ” ” ” ” ”) %”; 7”< 8”= 8’” ” ’” ” œ” ” ” ” ” ” ” ” ”) %”> :”? ;”Ì@ ;’” ” ’” ”; 9’” ” ’” ” œ” ” ” ” ” ” ” ” ”) %”< 8”= 9”> 9’” ” ’” 	” ’” 	” ’” 	” ’” 	” ’” 	” ’” 	” ’”  	”  ’”  	”  ‘” "’” $” $
+–” $” $
+” Ìq” Ìq
+” Ìq” Ìq˜” $” $
+” Ìr”! Ìr”" Ìr”+ Ìr”, Ìr”2 Ìr$˜” $” $
+” Ìs” Ìs” Ìs”% Ìs”& Ìs”6 Ìs(–” $” $
+” Ìt” Ìt”  Ìt”! Ìt’” %” %’” &” &	’” %” %–” &” &	” 2” 2” 2” 2”” '” '” '” '˜” '” '” (” (” (”& ( ”' (!”+ (%–” '” '” )” )” )” )˜” '” '” *” *” *”  *”! *”& * ˜” '” '” +” +” +”$ +”% +”+ +%–” '” '” ,” ,” ,”  ,–” '” '” -”  -”! -”) -#–” '” '” .” .” .” .–” '” '” /” /” /” /œ” '” '” 0” 0” 0” 0” 0”  0”$ 0”% 0”0 0*”2 0,’” '” '’” %” %’” &” &	’” 4” 4	–” 4” 4	” ÌK” ÌK” ÌK” ÌK”” 5” 5” 5” 5“” ?” ?” ?”” Ì@” Ì@” Ì@” Ì@”” ÌA” ÌA” ÌA” ÌA–” ÌB” ÌB” ÌB”" ÌB”# ÌB”) ÌB%’” ÌC”, ÌC(’” ÌD”# ÌD’” ÌE”4 ÌE0’” ÌF”& ÌF"’” ÌG”( ÌG$’” ÌH” ÌH‘” ÌI˜” 5” 5” 6” 6” 6”& 6 ”' 6!”+ 6%–” 5” 5” 7” 7” 7” 7˜” 5” 5” 8” 8” 8”  8”! 8”& 8 ˜” 5” 5” 9” 9” 9”$ 9”% 9”+ 9%–” 5” 5” :” :” :”  :–” 5” 5” ;”  ;”! ;”) ;#–” 5” 5” <” <” <” <–” 5” 5” =” =” =” =œ” 5” 5” >” >” >” >” >”  >”$ >”% >”0 >*”2 >,’” ?” ?’” 5” 5’” 4” 4	’” ÌM” ÌM	–” ÌM” ÌM	” Ìk” Ìk” Ìk” Ìk˜” ÌM” ÌM	” Ìl” Ìl” Ìl”( Ìl”) Ìl ”/ Ìl&˜” ÌM” ÌM	” Ìm” Ìm” Ìm”" Ìm”# Ìm”3 Ìm*˜” ÌM” ÌM	” Ìn” Ìn” Ìn”( Ìn”) Ìn ”/ Ìn&–” ÌM” ÌM	” Ìo” Ìo” Ìo” Ìo”” ÌN” ÌN”# ÌN”* ÌN–” ÌN” ÌN” ÌO” ÌO” ÌO”. ÌO&–” ÌN” ÌN” ÌP” ÌP” ÌP” ÌP–” ÌN” ÌN” ÌQ” ÌQ” ÌQ”! ÌQž” ÌN” ÌN” ÌR” ÌR” ÌR” ÌR”" ÌR”$ ÌR”& ÌR”( ÌR ”, ÌR$”. ÌR&”/ ÌR'”1 ÌR)˜” ÌN” ÌN” ÌS” ÌS” ÌS”" ÌS”# ÌS”( ÌS —” ÌN” ÌN” ÌT” ÌT” ÌT” ÌT”  ÌTš” ÌV” ÌV” ÌV”  ÌV”# ÌV”$ ÌV ”( ÌV$”) ÌV%”4 ÌV0”5 ÌV1Ü ” ÌW” ÌW” ÌW”  ÌW”# ÌW”' ÌW#”( ÌW$”3 ÌW/”4 ÌW0”5 ÌW1”6 ÌW2”9 ÌW5”: ÌW6”; ÌW7”< ÌW8”= ÌW9”Ì@ ÌW<”ÌA ÌW=’” ÌY”" ÌY”” ÌZ” ÌZ” ÌZ”" ÌZ”” Ì[” Ì[”  Ì[”! Ì[–” Ì\” Ì\” Ì\”& Ì\ ”' Ì\!”- Ì\'“” Ì]”* Ì]$”, Ì]&’” Ì^”& Ì^”” Ì_”  Ì_”" Ì_”$ Ì_”” Ì`” Ì`” Ì`” Ì`–” Ìa” Ìa” Ìa”  Ìa”" Ìa”+ Ìa#‘” Ìb”” Ìc” Ìc” Ìc” ÌcÜ ” Ìd” Ìd” Ìd”$ Ìd”' Ìd!”+ Ìd%”, Ìd&”7 Ìd1”8 Ìd2”9 Ìd3”: Ìd4”= Ìd7”> Ìd8”? Ìd9”Ì@ Ìd:”ÌA Ìd;”ÌD Ìd>”ÌE Ìd?”” Ìe” Ìe” Ìe” Ìe’” Ìf
+” Ìf–” ÌN” ÌN” Ìg” Ìg” Ìg” Ìg–” ÌN” ÌN” Ìh” Ìh” Ìh” Ìh˜” ÌN” ÌN” Ìi” Ìi” Ìi”% Ìi”& Ìi”6 Ìi.’” ÌN” ÌN’” ÌM” ÌM	’” $” $
+‘” Ìu’”  ”#  ÔrD–§version¤file§sources®sourcesContent¥names¨mappingsÀ‘À‘ÀÜ Í‘”    ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”  	 ‘”  
+ ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”    ‘”  ! ‘”  " ‘”  # ‘”  $ ‘”  % ‘”  & ‘”  ' ‘”  ( ‘”  ) ‘”  * ‘”  + ‘”  , ‘”  - ‘”  . ‘”  / ‘”  0 ‘”  1 ‘”  2 ‘”  3 ‘”  4 ‘”  5 ‘”  6 ‘”  7 ‘”  8 ‘”  9 ‘”  : ‘”  ; ‘”  < ‘”  = ‘”  > ‘”  ? ‘”  Ì@ ‘”  ÌA ‘”  ÌB ‘”  ÌC ‘”  ÌD ‘”  ÌE ‘”  ÌF ‘”  ÌG ‘”  ÌH ‘”  ÌI ‘”  ÌJ ‘”  ÌK ‘”  ÌL ‘”  ÌM ‘”  ÌN ‘”  ÌO ‘”  ÌP ‘”  ÌQ ‘”  ÌR ‘”  ÌS ‘”  ÌT ‘”  ÌU ‘”  ÌV ‘”  ÌW ‘”  ÌX ‘”  ÌY ‘”  ÌZ ‘”  Ì[ ‘”  Ì\ ‘”  Ì] ‘”  Ì^ ‘”  Ì_ ‘”  Ì` ‘”  Ìa ‘”  Ìb ‘”  Ìc ‘”  Ìd ‘”  Ìe ‘”  Ìf ‘”  Ìg ‘”  Ìh ‘”  Ìi ‘”  Ìj ‘”  Ìk ‘”  Ìl ‘”  Ìm ‘”  Ìn ‘”  Ìo ‘”  Ìp ‘”  Ìq ‘”  Ìr ‘”  Ìs ‘”  Ìt ‘”  Ìu ‘”  Ìv ‘”  Ìw ‘”  Ìx ‘”  Ìy ‘”  Ìz ‘”  Ì{ ‘”  Ì| ‘”  Ì} ‘”  Ì~ ‘”  Ì ‘”  Ì€ ‘”  Ì ‘”  Ì‚ ‘”  Ìƒ ‘”  Ì„ ‘”  Ì… ‘”  Ì† ‘”  Ì‡ ‘”  Ìˆ ‘”  Ì‰ ‘”  ÌŠ ‘”  Ì‹ ‘”  ÌŒ ‘”  Ì ‘”  ÌŽ ‘”  Ì ‘”  Ì ‘”  Ì‘ ‘”  Ì’ ‘”  Ì“ ‘”  Ì” ‘”  Ì• ‘”  Ì– ‘”  Ì— ‘”  Ì˜ ‘”  Ì™ ‘”  Ìš ‘”  Ì› ‘”  Ìœ ‘”  Ì ‘”  Ìž ‘”  ÌŸ ‘”  Ì  ‘”  Ì¡ ‘”  Ì¢ ‘”  Ì£ ‘”  Ì¤ ‘”  Ì¥ ‘”  Ì¦ ‘”  Ì§ ‘”  Ì¨ ‘”  Ì© ‘”  Ìª ‘”  Ì« ‘”  Ì¬ ‘”  Ì­ ‘”  Ì® ‘”  Ì¯ ‘”  Ì° ‘”  Ì± ‘”  Ì² ‘”  Ì³ ‘”  Ì´ ‘”  Ìµ ‘”  Ì¶ ‘”  Ì· ‘”  Ì¸ ‘”  Ì¹ ‘”  Ìº ‘”  Ì» ‘”  Ì¼ ‘”  Ì½ ‘”  Ì¾ ‘”  Ì¿ ‘”  ÌÀ ‘”  ÌÁ ‘”  ÌÂ ‘”  ÌÃ ‘”  ÌÄ ‘”  ÌÅ ‘”  ÌÆ ‘”  ÌÇ ‘”  ÌÈ ‘”  ÌÉ ‘”  ÌÊ ‘”  ÌË ‘”  ÌÌ ÂÔ  ÔrE”²dynamicImportCache¹exportAllDeclarationCache»exportNamedDeclarationCache«importCache

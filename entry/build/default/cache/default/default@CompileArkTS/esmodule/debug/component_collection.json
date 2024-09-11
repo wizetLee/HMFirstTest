@@ -1,0 +1,33 @@
+{
+  "entry/src/main/ets/entryability/EntryAbility.ets": [
+    "If"
+  ],
+  "entry/src/main/ets/pages/Index.ets": [
+    "Column",
+    "Button",
+    "If"
+  ],
+  "entry/src/main/ets/pages/Home/HomePage.ets": [
+    "Column",
+    "Text",
+    "Button"
+  ],
+  "entry/src/main/ets/pages/My/My.ets": [
+    "Column",
+    "Text"
+  ],
+  "entry/src/main/ets/pages/Animation/Animation.ets": [
+    "Column",
+    "Row",
+    "Text",
+    "Button"
+  ],
+  "entry/src/main/ets/pages/Canvas/Canvas.ets": [
+    "RenderingContextSettings",
+    "CanvasRenderingContext2D",
+    "ImageBitmap",
+    "Flex",
+    "Column",
+    "Canvas"
+  ]
+}

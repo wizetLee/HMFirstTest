@@ -1,0 +1,22 @@
+{
+  "modulePathMap": {
+    "entry": "/Users/wizet/FirstTest/entry"
+  },
+  "compileMode": "esmodule",
+  "projectRootPath": "/Users/wizet/FirstTest",
+  "nodeModulesPath": "/Users/wizet/FirstTest/entry/.preview/default/intermediates/loader_out/default/node_modules",
+  "byteCodeHarInfo": {},
+  "declarationEntry": [],
+  "moduleName": "entry",
+  "hspNameOhmMap": {},
+  "harNameOhmMap": {},
+  "packageManagerType": "ohpm",
+  "compileEntry": [],
+  "otherCompileFiles": [],
+  "dynamicImportLibInfo": {},
+  "routerMap": [],
+  "hspResourcesMap": {},
+  "anBuildOutPut": "/Users/wizet/FirstTest/entry/.preview/default/intermediates/loader_out/default/an/arm64-v8a",
+  "anBuildMode": "type",
+  "buildConfigPath": ".preview/config/buildConfig.json"
+}
