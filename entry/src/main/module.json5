@@ -1,0 +1,66 @@
+
+//HAP是HarmonyOS Ability Package的缩写，构成HarmonyOS应用APP Pack的基础。
+//每个HAP包含一个或多个Ability，分为有UI界面的FA（Feature Ability）和无UI的PA（Particle Ability)
+{
+  "module": {
+    // 标识当前Module的名称，确保该名称在整个应用中唯一
+    "name": "entry",
+    // 标识当前Module的类型。支持的取值如下：
+    // - entry：应用的主模块。
+    // - feature：应用的动态特性模块。
+    // - har：静态共享包模块。
+    // - shared：动态共享包模块。
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "EntryAbility", // 标识当前Module的入口UIAbility名称或者ExtensionAbility名称
+    "deviceTypes": [ // 标识当前Module可以运行在哪类设备上。
+      "phone",
+      "tablet",
+      "2in1"
+    ],
+    "deliveryWithInstall": true, // 该Module对应的HAP是否跟随应用一起安装
+    "installationFree": false, // 当前Module是否支持免安装特性
+    "pages": "$profile:main_pages", // 标识当前Module的profile资源，用于列举每个页面信息
+    "abilities": [
+      {
+        "name": "EntryAbility",
+        "srcEntry": "./ets/entryability/EntryAbility.ets",
+        "description": "$string:EntryAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:EntryAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ]
+      }
+    ],// 标识当前Module中UIAbility的配置信息，只对当前UIAbility生效
+    "extensionAbilities": [
+      {
+        "name": "EntryBackupAbility",
+        "srcEntry": "./ets/entrybackupability/EntryBackupAbility.ets",
+        "type": "backup",
+        "exported": false,
+        "metadata": [
+          {
+            "name": "ohos.extension.backup",
+            "resource": "$profile:backup_config"
+          }
+        ]
+      }
+    ], // 标识当前Module中ExtensionAbility的配置信息，只对当前ExtensionAbility生效
+//    "metadata": [ // 标识当前Module的自定义元信息
+//
+//    ]
+
+//    "definePermissions": [] // 标识系统资源hap定义的权限
+  }
+}
