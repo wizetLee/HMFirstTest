@@ -26,8 +26,12 @@
     "RenderingContextSettings",
     "CanvasRenderingContext2D",
     "ImageBitmap",
+    "OffscreenCanvasRenderingContext2D",
     "Flex",
     "Column",
-    "Canvas"
+    "Canvas",
+    "TapGesture",
+    "PanGesture",
+    "If"
   ]
 }
