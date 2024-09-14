@@ -24,14 +24,15 @@
   ],
   "entry/src/main/ets/pages/Canvas/Canvas.ets": [
     "RenderingContextSettings",
-    "CanvasRenderingContext2D",
-    "ImageBitmap",
-    "OffscreenCanvasRenderingContext2D",
-    "Flex",
     "Column",
-    "Canvas",
-    "TapGesture",
-    "PanGesture",
+    "Blank",
+    "Button",
+    "Canvas"
+  ],
+  "entry/src/main/ets/pages/Canvas/DataHistogram.ets": [
+    "RenderingContextSettings",
+    "CanvasRenderingContext2D",
+    "Path2D",
     "If"
   ]
 }

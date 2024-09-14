@@ -4816,12 +4816,27 @@
       "error": false
     },
     "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Canvas/Canvas.ets": {
-      "mtimeMs": 1726132657739.8674,
+      "mtimeMs": 1726291530305.9832,
       "children": [
-        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts"
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts",
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Canvas/DataHistogram.ets"
       ],
       "parent": [],
       "error": false
+    },
+    "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Canvas/DataHistogram.ets": {
+      "mtimeMs": 1726291410821.9937,
+      "children": [],
+      "parent": [
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Canvas/Canvas.ets"
+      ],
+      "error": false,
+      "errorCodes": [
+        2304,
+        18048,
+        2365,
+        2363
+      ]
     }
   }
 }
