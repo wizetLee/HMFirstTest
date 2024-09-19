@@ -4,6 +4,7 @@
     "pages/Home/HomePage",
     "pages/My/My",
     "pages/Animation/Animation",
-    "pages/Canvas/Canvas"
+    "pages/Canvas/Canvas",
+    "pages/Swiper/Swiper"
   ]
 }

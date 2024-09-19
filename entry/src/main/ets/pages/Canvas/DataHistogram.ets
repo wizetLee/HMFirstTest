@@ -124,8 +124,6 @@ export class DataHistogramModel {
     if (this.columnar.length == 0) {
       console.log("Error DataHistogram column count == 0")
       return
-    } else {
-
     }
 
     let columnarWidthPerColumn = canvasWidth / this.columnar.length
@@ -151,65 +149,66 @@ export class DataHistogramModel {
         maxValue = Math.max(maxValue, element.value)
       }
     })
-    let num: number = this.columnar.length;
-    let i: number = 0;
-    for (i = 0; i < num; i++) {
-      drawY = startY;
-      let columnTop = this.columnarTopDesc[i];
-      if (columnTop) {
-        drawY += columnarTopDescDrawHeight
-      }
-      let column = this.columnar[i];
-      this.context.fillStyle = column.color ?? Color.Gray
-      if (column) {
-        drawY += columnarHeight
-        this.context.save()
-        this.context.beginPath()
-        let curValue = (column.value ?? 0);
-        let y = curValue / maxValue * columnarHeight
-        if (maxValue <= 0) {
+    {
+      let num: number = this.columnar.length;
+      let i: number = 0;
+      for (i = 0; i < num; i++) {
+        drawY = startY;
+        let columnTop = this.columnarTopDesc[i];
+        if (columnTop) {
+          drawY += columnarTopDescDrawHeight
+        }
+        let column = this.columnar[i];
+        this.context.fillStyle = column.color ?? Color.Gray
+        if (column) {
+          drawY += columnarHeight
+          this.context.save()
+          this.context.beginPath()
+          let curValue = (column.value ?? 0);
+          let y = curValue / maxValue * columnarHeight
+          if (maxValue <= 0) {
 
-        } else {
-          let path =
-            this.drawRoundedRect(drawX + (columnarWidthPerColumn - columnarWidth) / 2
-              , drawY - y
-              , columnarWidth
-              , Math.max(y, 2)
-              , {
-                topLeft: 2,
-                topRight: 2,
-              })
-          this.context.fill(path)
-        }
+          } else {
+            let path =
+              this.drawRoundedRect(drawX + (columnarWidthPerColumn - columnarWidth) / 2
+                , drawY - y
+                , columnarWidth
+                , Math.max(y, 2)
+                , {
+                  topLeft: 2,
+                  topRight: 2,
+                })
+            this.context.fill(path)
+          }
 
-        if (columnTop && columnTop.desc) {
-          this.context.textAlign = 'center'
-          this.context.direction = 'inherit'
-          this.context.textBaseline = 'bottom'
-          this.context.fillText(columnTop.desc, drawX + columnarWidthPerColumn / 2, drawY - y,
-            columnarWidthPerColumn)
-          // let measureTextResult = this.context.measureText(columnTop.desc)
+          if (columnTop && columnTop.desc) {
+            this.context.textAlign = 'center'
+            this.context.direction = 'inherit'
+            this.context.textBaseline = 'bottom'
+            this.context.fillText(columnTop.desc, drawX + columnarWidthPerColumn / 2, drawY - y,
+              columnarWidthPerColumn)
+            // let measureTextResult = this.context.measureText(columnTop.desc)
+          }
         }
-      }
-      let columnBottom = this.columnarBottomDesc[i];
-      if (columnBottom) {
-        if (columnBottom && columnBottom.desc) {
-          this.context.fillText(columnBottom.desc, drawX + columnarWidthPerColumn / 2,
-            drawY + columnarBottomDescDrawHeight, columnarWidthPerColumn)
+        let columnBottom = this.columnarBottomDesc[i];
+        if (columnBottom) {
+          if (columnBottom && columnBottom.desc) {
+            this.context.fillText(columnBottom.desc, drawX + columnarWidthPerColumn / 2,
+              drawY + columnarBottomDescDrawHeight, columnarWidthPerColumn)
+          }
+          drawY += columnarBottomDescDrawHeight
         }
-        drawY += columnarBottomDescDrawHeight
+        let scale = this.scale[i]
+        if (scale) {
+          drawY += columnarScaleDrawHeight
+        }
+        let scaleDesc = this.scaleDesc[i]
+        if (scaleDesc) {
+          drawY += columnarScaleDescDrawHeight
+        }
+        drawX += columnarWidthPerColumn
       }
-      let scale = this.scale[i]
-      if (scale) {
-        drawY += columnarScaleDrawHeight
-      }
-      let scaleDesc = this.scaleDesc[i]
-      if (scaleDesc) {
-        drawY += columnarScaleDescDrawHeight
-      }
-      drawX += columnarWidthPerColumn
     }
-
     { // 绘制scale
       // startX
       // canvasWidth

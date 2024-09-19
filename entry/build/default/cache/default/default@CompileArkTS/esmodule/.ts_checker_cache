@@ -4753,7 +4753,7 @@
       "error": false
     },
     "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Index.ets": {
-      "mtimeMs": 1726040300447.1274,
+      "mtimeMs": 1726644903012.2039,
       "children": [
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.router.d.ts",
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Home/HomePage.ets"
@@ -4816,16 +4816,17 @@
       "error": false
     },
     "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Canvas/Canvas.ets": {
-      "mtimeMs": 1726291530305.9832,
+      "mtimeMs": 1726645085513.4646,
       "children": [
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts",
-        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Canvas/DataHistogram.ets"
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Canvas/DataHistogram.ets",
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Canvas/LinePaintModel.ets"
       ],
       "parent": [],
       "error": false
     },
     "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Canvas/DataHistogram.ets": {
-      "mtimeMs": 1726291410821.9937,
+      "mtimeMs": 1726653575027.729,
       "children": [],
       "parent": [
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Canvas/Canvas.ets"
@@ -4837,6 +4838,33 @@
         2365,
         2363
       ]
+    },
+    "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Canvas/LinePaintModel.ets": {
+      "mtimeMs": 1726644079218.8389,
+      "children": [],
+      "parent": [
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Canvas/Canvas.ets"
+      ],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Swiper/SwiperContent.ets": {
+      "mtimeMs": 1726646195457.9539,
+      "children": [],
+      "parent": [
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Swiper/Swiper.ets"
+      ],
+      "error": false,
+      "errorCodes": [
+        2663
+      ]
+    },
+    "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Swiper/Swiper.ets": {
+      "mtimeMs": 1726646089264.1145,
+      "children": [
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Swiper/SwiperContent.ets"
+      ],
+      "parent": [],
+      "error": false
     }
   }
 }

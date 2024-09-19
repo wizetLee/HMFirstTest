@@ -17,7 +17,7 @@ struct Index {
     //FIMXE: how about
 
     setTimeout(() => {
-      sysRouter.pushUrl({ url: `pages/Canvas/Canvas`, params: null }, sysRouter.RouterMode.Standard, (err) => {
+      sysRouter.pushUrl({ url: `pages/Swiper/Swiper`, params: null }, sysRouter.RouterMode.Standard, (err) => {
         if (err) {
           console.error(`Invoke pushUrl failed, code is ${err.code}, message is ${err.message}`);
           return;

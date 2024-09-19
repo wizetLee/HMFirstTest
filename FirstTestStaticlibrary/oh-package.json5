@@ -1,0 +1,9 @@
+{
+  "name": "firstteststaticlibrary",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "Index.ets", // 配置入口声明文件，Index.ets文件是HAR导出声明文件的入口，当然也可以自己修改
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}

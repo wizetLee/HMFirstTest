@@ -1,9 +1,38 @@
 import { LengthMetricsUnit } from '@kit.ArkUI'
 import { DataHistogramElement, DataHistogramModel } from './DataHistogram'
+import { LinePaintModel } from './LinePaintModel'
 
 @Entry({ routeName: "Canvas" })
 @Component
 struct CanvasPage {
+
+  componentName = "CanvasPage"
+
+  //Entry 生命周期
+  onPageShow(): void {
+    console.log(`${this.componentName} - onPageShow`)
+  }
+
+  onPageHide(): void {
+    console.log(`${this.componentName} - onPageHide`)
+  }
+
+  //Component 生命周期
+  aboutToAppear(): void {
+    console.log(`${this.componentName} - aboutToAppear`)
+  }
+
+  aboutToDisappear(): void {
+    console.log(`${this.componentName} - aboutToDisappear`)
+  }
+
+  // aboutToReuse(params: { [key: string]: Any }): void {
+  // }
+  aboutToRecycle(): void {
+    console.log(`${this.componentName} - aboutToRecycle`)
+  }
+
+
   private settings: RenderingContextSettings = new RenderingContextSettings(true) // 抗锯齿启动！，还可以自定义像素单位，但最好别乱整
   // private context: CanvasRenderingContext2D = new CanvasRenderingContext2D(this.settings)
   // 用于矩阵变化
@@ -13,8 +42,7 @@ struct CanvasPage {
   // private offContext: OffscreenCanvasRenderingContext2D = new OffscreenCanvasRenderingContext2D(600, 600, this.settings)
   @State model: DataHistogramModel = DataHistogramModel.defaultModel()
 
-  aboutToAppear(): void {
-  }
+  linePointModel = new LinePaintModel()
 
   build() {
     Column({}) {
@@ -28,47 +56,66 @@ struct CanvasPage {
         .onReady(() => {
           this.model.draw();
         }).backgroundColor(Color.Orange)
+      Canvas(this.linePointModel.context)
+        .width('100%')
+        .height('40%')
+        .onReady(() => {
+          this.linePointModel.draw();
+        }).backgroundColor(Color.Grey)
     }
   }
 
   valueDidChange() {
 
-    let model = this.model
-    model.columnar = [
-      new DataHistogramElement(Color.Green, "17", Math.random()), //17),
-      new DataHistogramElement(Color.Green, "28", Math.random()), //28),
-      new DataHistogramElement(Color.Green, "122", Math.random()), //122),
-      new DataHistogramElement(Color.Green, "875", Math.random()), //875),
-      new DataHistogramElement(Color.Green, "2878", Math.random()), //2878),
-      new DataHistogramElement(Color.Gray, "207", Math.random()), //207),
-      new DataHistogramElement(Color.Red, "955", Math.random()), //955),
-      new DataHistogramElement(Color.Red, "166", Math.random()), //166),
-      new DataHistogramElement(Color.Red, "50", Math.random()), //50),
-      new DataHistogramElement(Color.Red, "23", Math.random()), //23),
-      new DataHistogramElement(Color.Red, "43", Math.random()),//43),
-    ]
-    model.columnarTopDesc = model.columnar
-    model.columnarBottomDesc = [
-      new DataHistogramElement(Color.Green, "10-8", Math.random()), //17),
-      new DataHistogramElement(Color.Gray, "8-6", Math.random()), //28),
-      new DataHistogramElement(Color.Gray, "6-4", Math.random()), //122),
-      new DataHistogramElement(Color.Gray, "4-2", Math.random()), //875),
-      new DataHistogramElement(Color.Gray, "2-0", Math.random()), //2878),
-      new DataHistogramElement(Color.Gray, "平", Math.random()), //207),
-      new DataHistogramElement(Color.Gray, "0-2", Math.random()), //955),
-      new DataHistogramElement(Color.Gray, "2-4", Math.random()), //166),
-      new DataHistogramElement(Color.Gray, "4-6", Math.random()), //50),
-      new DataHistogramElement(Color.Gray, "6-8", Math.random()), //23),
-      new DataHistogramElement(Color.Red, "8-10", Math.random()),//43),
-    ]
-    model.scale = [
-      new DataHistogramElement(Color.Green, "跌123家", Math.random()), //1),
-      new DataHistogramElement(Color.Gray, "平555家", Math.random()), //2),
-      new DataHistogramElement(Color.Red, "涨4321家", Math.random()),//1),
-    ]
-    model.scaleDesc = model.scale
-    // this.model = model;
-    model.draw()
+    {
+      let model = this.model
+      model.columnar = [
+        new DataHistogramElement(Color.Green, "17", Math.random()), //17),
+        new DataHistogramElement(Color.Green, "28", Math.random()), //28),
+        new DataHistogramElement(Color.Green, "122", Math.random()), //122),
+        new DataHistogramElement(Color.Green, "875", Math.random()), //875),
+        new DataHistogramElement(Color.Green, "2878", Math.random()), //2878),
+        new DataHistogramElement(Color.Gray, "207", Math.random()), //207),
+        new DataHistogramElement(Color.Red, "955", Math.random()), //955),
+        new DataHistogramElement(Color.Red, "166", Math.random()), //166),
+        new DataHistogramElement(Color.Red, "50", Math.random()), //50),
+        new DataHistogramElement(Color.Red, "23", Math.random()), //23),
+        new DataHistogramElement(Color.Red, "43", Math.random()),//43),
+      ]
+      model.columnarTopDesc = model.columnar
+      model.columnarBottomDesc = [
+        new DataHistogramElement(Color.Green, "10-8", Math.random()), //17),
+        new DataHistogramElement(Color.Gray, "8-6", Math.random()), //28),
+        new DataHistogramElement(Color.Gray, "6-4", Math.random()), //122),
+        new DataHistogramElement(Color.Gray, "4-2", Math.random()), //875),
+        new DataHistogramElement(Color.Gray, "2-0", Math.random()), //2878),
+        new DataHistogramElement(Color.Gray, "平", Math.random()), //207),
+        new DataHistogramElement(Color.Gray, "0-2", Math.random()), //955),
+        new DataHistogramElement(Color.Gray, "2-4", Math.random()), //166),
+        new DataHistogramElement(Color.Gray, "4-6", Math.random()), //50),
+        new DataHistogramElement(Color.Gray, "6-8", Math.random()), //23),
+        new DataHistogramElement(Color.Red, "8-10", Math.random()),//43),
+      ]
+      model.scale = [
+        new DataHistogramElement(Color.Green, "跌123家", Math.random()), //1),
+        new DataHistogramElement(Color.Gray, "平555家", Math.random()), //2),
+        new DataHistogramElement(Color.Red, "涨4321家", Math.random()),//1),
+      ]
+      model.scaleDesc = model.scale
+      // this.model = model;
+      model.draw()
+    }
+    {
+      this.linePointModel.displayDataCount = 240
+      this.linePointModel.data = []
+      let i = 0
+      let limit = 240
+      for (; i < limit; i++) {
+        this.linePointModel.data.push(Math.random())
+      }
+      this.linePointModel.padding = {left: 10, right: 10, top: 20, bottom: 20}
+      this.linePointModel.draw()
+    }
   }
 
   // build() {

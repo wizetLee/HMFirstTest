@@ -34,5 +34,28 @@
     "CanvasRenderingContext2D",
     "Path2D",
     "If"
+  ],
+  "entry/src/main/ets/pages/Canvas/LinePaintModel.ets": [
+    "RenderingContextSettings",
+    "CanvasRenderingContext2D",
+    "Path2D",
+    "If"
+  ],
+  "entry/src/main/ets/pages/Swiper/Swiper.ets": [
+    "Column",
+    "SwiperController",
+    "Blank",
+    "Swiper",
+    "ForEach",
+    "Text",
+    "Scroller",
+    "Scroll",
+    "Row",
+    "If"
+  ],
+  "entry/src/main/ets/pages/Swiper/SwiperContent.ets": [
+    "Column",
+    "Text",
+    "If"
   ]
 }
