@@ -7,6 +7,10 @@
   "license": "",
   "dependencies": {
 //    "@ohos/library": "file:../entry/src/main/ets/pages/Home/"
+
+    // 引入包
+    "FirstTestStaticlibrary": "file:../FirstTestStaticLibrary",
+    "FirstTestSharelibrary": "file:../FirstTestShareLibrary"
   }
 }
 

@@ -1,6 +1,6 @@
 {
   "module": {
-    "name": "FirstTestStaticlibrary",
+    "name": "FirstTestStaticLibrary",
     "type": "har",
     "deviceTypes": [
       "default",

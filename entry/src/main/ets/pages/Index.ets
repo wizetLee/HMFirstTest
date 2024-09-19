@@ -3,6 +3,8 @@ import sysRouter from '@ohos.router';
 // pushNamedRoute 调用的时候需要引入
 import './Home/HomePage';
 
+import { MainPage, FTSLTool } from 'FirstTestStaticlibrary';
+
 @Entry
 @Component
 struct Index {
@@ -13,11 +15,15 @@ struct Index {
   onPageShow(): void {
     console.log(`${this.componentName} - onPageShow`)
 
+    //FTSLTool.haveFun();
+
     //let js = getInspectorByKey("onTap");
     //FIMXE: how about
 
     setTimeout(() => {
-      sysRouter.pushUrl({ url: `pages/Swiper/Swiper`, params: null }, sysRouter.RouterMode.Standard, (err) => {
+      let url = `pages/Swiper/Swiper`
+      //let url = '@bundle:com.example.firsttest/FirstTestShareLibrary/ets/pages/ExportTestEntry'
+      sysRouter.pushUrl({ url: url, params: null }, sysRouter.RouterMode.Standard, (err) => {
         if (err) {
           console.error(`Invoke pushUrl failed, code is ${err.code}, message is ${err.message}`);
           return;

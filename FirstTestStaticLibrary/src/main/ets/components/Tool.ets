@@ -2,7 +2,7 @@
 
 export class FTSLTool {
 
-  haveFun() {
+  static haveFun() {
     console.log("haha")
   }
 }

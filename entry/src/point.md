@@ -1,0 +1,4 @@
+关于混淆
+编译HAR时，如果没有开启混淆能力，编译后的产物是源码文件。
+仅Stage模型的ArkTS工程支持混淆。
+HAR开启混淆后资源ID为-1，ResourceManager等通过ID获取资源的API不再生效。

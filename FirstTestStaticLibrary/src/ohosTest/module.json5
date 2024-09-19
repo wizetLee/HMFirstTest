@@ -1,6 +1,6 @@
 {
   "module": {
-    "name": "FirstTestStaticlibrary_test",
+    "name": "FirstTestStaticLibrary_test",
     "type": "feature",
     "deviceTypes": [
       "default",

@@ -4,6 +4,7 @@ import type Want from "@ohos:app.ability.Want";
 import hilog from "@ohos:hilog";
 import type window from "@ohos:window";
 import emitter from "@ohos:events.emitter";
+import type resourceManager from "@ohos:resourceManager";
 export default class EntryAbility extends UIAbility {
     onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
         hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onCreate');
@@ -12,6 +13,8 @@ export default class EntryAbility extends UIAbility {
         hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onDestroy');
     }
     onWindowStageCreate(windowStage: window.WindowStage): void {
+        let context = this.context;
+        let resourceManager: resourceManager.ResourceManager = context.resourceManager; // 获取当前应用的资源管理对象
         // Main window is created, set main page for this ability
         hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageCreate');
         windowStage.loadContent('pages/Index', (err) => {
