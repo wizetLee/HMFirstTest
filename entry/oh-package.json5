@@ -9,8 +9,8 @@
 //    "@ohos/library": "file:../entry/src/main/ets/pages/Home/"
 
     // 引入包
+    "FirstTestSharelibrary": "file:../FirstTestShareLibrary",
     "FirstTestStaticlibrary": "file:../FirstTestStaticLibrary",
-    "FirstTestSharelibrary": "file:../FirstTestShareLibrary"
   }
 }
 

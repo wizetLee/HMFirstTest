@@ -4,6 +4,8 @@ import sysRouter from '@ohos.router';
 import './Home/HomePage';
 
 import { MainPage, FTSLTool } from 'FirstTestStaticlibrary';
+import { duplicationOfName as d } from 'FirstTestSharelibrary';
+import { duplicationOfName as d2 } from 'FirstTestStaticlibrary';
 
 @Entry
 @Component
@@ -14,6 +16,11 @@ struct Index {
   //Entry 生命周期
   onPageShow(): void {
     console.log(`${this.componentName} - onPageShow`)
+
+    // d()
+    // d2()
+    // duplicationOfName()
+    // duplicationOfName()
 
     //FTSLTool.haveFun();
 

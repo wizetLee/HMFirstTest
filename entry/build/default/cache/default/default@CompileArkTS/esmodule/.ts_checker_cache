@@ -4755,15 +4755,19 @@
       "error": false
     },
     "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Index.ets": {
-      "mtimeMs": 1726723396486.1743,
+      "mtimeMs": 1726799135639.3137,
       "children": [
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.router.d.ts",
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Home/HomePage.ets",
-        "/Users/wizet/Documents/HM/FirstTest/FirstTestStaticLibrary/Index.ets"
+        "/Users/wizet/Documents/HM/FirstTest/FirstTestStaticLibrary/Index.ets",
+        "/Users/wizet/Documents/HM/FirstTest/FirstTestShareLibrary/Index.ets",
+        "/Users/wizet/Documents/HM/FirstTest/FirstTestStaticLibrary/Index.ets",
+        "/Users/wizet/Documents/HM/FirstTest/FirstTestShareLibrary/Index.ets"
       ],
       "parent": [],
       "error": true,
       "errorCodes": [
+        -1,
         28007
       ]
     },
@@ -4870,7 +4874,7 @@
       "error": false
     },
     "/Users/wizet/Documents/HM/FirstTest/FirstTestStaticLibrary/Index.ets": {
-      "mtimeMs": 1726710381024.8162,
+      "mtimeMs": 1726798994261.561,
       "children": [
         "/Users/wizet/Documents/HM/FirstTest/FirstTestStaticLibrary/src/main/ets/components/MainPage.ets",
         "/Users/wizet/Documents/HM/FirstTest/FirstTestStaticLibrary/src/main/ets/components/Tool.ets"
@@ -4889,10 +4893,28 @@
       "error": false
     },
     "/Users/wizet/Documents/HM/FirstTest/FirstTestStaticLibrary/src/main/ets/components/Tool.ets": {
-      "mtimeMs": 1726711285685.9617,
+      "mtimeMs": 1726798980291.3242,
       "children": [],
       "parent": [
         "/Users/wizet/Documents/HM/FirstTest/FirstTestStaticLibrary/Index.ets"
+      ],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/FirstTest/FirstTestShareLibrary/Index.ets": {
+      "mtimeMs": 1726799012351.9265,
+      "children": [
+        "/Users/wizet/Documents/HM/FirstTest/FirstTestShareLibrary/src/main/ets/utils/Calc.ets"
+      ],
+      "parent": [
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Index.ets"
+      ],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/FirstTest/FirstTestShareLibrary/src/main/ets/utils/Calc.ets": {
+      "mtimeMs": 1726799003454.5356,
+      "children": [],
+      "parent": [
+        "/Users/wizet/Documents/HM/FirstTest/FirstTestShareLibrary/Index.ets"
       ],
       "error": false
     }

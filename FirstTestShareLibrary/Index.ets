@@ -1,1 +1,1 @@
-export { add } from './src/main/ets/utils/Calc'
+export { add, Calc, addHarlibrary, duplicationOfName } from './src/main/ets/utils/Calc'

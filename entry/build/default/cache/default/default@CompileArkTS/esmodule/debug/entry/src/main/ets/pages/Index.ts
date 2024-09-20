@@ -7,6 +7,8 @@ interface Index_Params {
 }
 import sysRouter from "@ohos:router";
 import "@bundle:com.example.firsttest/entry/ets/pages/Home/HomePage";
+import { duplicationOfName as d } from "@bundle:com.example.firsttest/FirstTestShareLibrary/Index";
+import { duplicationOfName as d2 } from "@bundle:com.example.firsttest/entry@FirstTestStaticLibrary/Index";
 class Index extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
         super(parent, __localStorage, elmtId, extraInfo);
@@ -50,6 +52,11 @@ class Index extends ViewPU {
     //Entry 生命周期
     onPageShow(): void {
         console.log(`${this.componentName} - onPageShow`);
+        this.dynamicImpart();
+        d();
+        d2();
+        // duplicationOfName()
+        // duplicationOfName()
         //FTSLTool.haveFun();
         //let js = getInspectorByKey("onTap");
         //FIMXE: how about
@@ -149,6 +156,25 @@ class Index extends ViewPU {
     }
     /// 异步方法
     async ccc() {
+    }
+    /// 动态import根据入参是常量还是变量，分成动态import常量表达式和动态import变量表达式两大特性规格
+    /// 动态import
+    dynamicImpart() {
+        import("@bundle:com.example.firsttest/FirstTestShareLibrary/Index").then((ns: any) => {
+            ns.Calc.staticAdd(8, 9); // 调用静态成员函数staticAdd()
+            let calc: any = new ns.Calc(); // 实例化类Calc
+            calc.instanceAdd(10, 11); // 调用成员函数instanceAdd()
+            ns.addHarlibrary(6, 7); // 调用全局方法addHarlibrary()
+            // 使用类、成员函数和方法的字符串名字进行反射调用
+            let className = 'Calc';
+            let methodName = 'instanceAdd';
+            let staticMethod = 'staticAdd';
+            let functionName = 'addHarlibrary';
+            ns[className][staticMethod](12, 13); // 调用静态成员函数staticAdd()
+            let calc1: any = new ns[className](); // 实例化类Calc
+            calc1[methodName](14, 15); // 调用成员函数instanceAdd()
+            ns[functionName](16, 17); // 调用全局方法addHarlibrary()
+        });
     }
     rerender() {
         this.updateDirtyElements();

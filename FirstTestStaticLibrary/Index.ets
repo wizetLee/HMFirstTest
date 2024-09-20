@@ -6,4 +6,4 @@
 /////
 export { MainPage } from './src/main/ets/components/MainPage'
 
-export { FTSLTool } from './src/main/ets/components/Tool'
+export { FTSLTool, duplicationOfName } from './src/main/ets/components/Tool'

@@ -12,6 +12,11 @@
     "Text",
     "Button"
   ],
+  "FirstTestStaticLibrary/src/main/ets/components/MainPage.ets": [
+    "Row",
+    "Column",
+    "Text"
+  ],
   "entry/src/main/ets/pages/My/My.ets": [
     "Column",
     "Text"
