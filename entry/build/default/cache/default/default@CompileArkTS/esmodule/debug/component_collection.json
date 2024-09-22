@@ -12,11 +12,6 @@
     "Text",
     "Button"
   ],
-  "FirstTestStaticLibrary/src/main/ets/components/MainPage.ets": [
-    "Row",
-    "Column",
-    "Text"
-  ],
   "entry/src/main/ets/pages/My/My.ets": [
     "Column",
     "Text"
@@ -61,6 +56,13 @@
   "entry/src/main/ets/pages/Swiper/SwiperContent.ets": [
     "Column",
     "Text",
+    "If"
+  ],
+  "entry/src/main/ets/pages/Gesture/Gesture.ets": [
+    "Column",
+    "RelativeContainer",
+    "TapGesture",
+    "PanGesture",
     "If"
   ]
 }

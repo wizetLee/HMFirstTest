@@ -5,6 +5,8 @@
     "pages/My/My",
     "pages/Animation/Animation",
     "pages/Canvas/Canvas",
-    "pages/Swiper/Swiper"
+    "pages/Swiper/Swiper",
+    "pages/Gesture/Gesture",
+    "pages/Resource/Resource"
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "row_file_module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "row_file_EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "row_file_EntryAbility_label",
+      "value": "label"
+    }
+  ]
+}

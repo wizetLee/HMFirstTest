@@ -2,11 +2,19 @@
   "string": [
     {
       "name": "module_desc",
-      "value": "module description"
+      "value": "module description",
+
+      "attr": {
+        "translatable": false
+      }
     },
     {
       "name": "EntryAbility_desc",
-      "value": "description"
+      "value": "description",
+      "attr": {
+        "translatable": true,
+        "priority": "LT"
+      }
     },
     {
       "name": "EntryAbility_label",

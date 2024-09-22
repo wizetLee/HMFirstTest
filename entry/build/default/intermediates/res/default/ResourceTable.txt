@@ -4,6 +4,7 @@ string app_name 0x01000000
 string module_desc 0x01000004
 string page_show 0x03000000
 color start_window_background 0x01000005
+float this_is_float_value 0x03000001
 media app_icon 0x01000001
 media background 0x01000006
 media foreground 0x01000007

@@ -3703,7 +3703,8 @@
         "/Users/wizet/FirstTest/entry/src/main/ets/pages/Index.ets",
         "/Users/wizet/FirstTest/entry/src/main/ets/entryability/EntryAbility.ets",
         "/Users/wizet/FirstTest/entry/src/main/ets/pages/PageOne.ets",
-        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/entryability/EntryAbility.ets"
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/entryability/EntryAbility.ets",
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Home/HomePage.ets"
       ],
       "error": false
     },
@@ -4743,11 +4744,13 @@
       "error": false
     },
     "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Home/HomePage.ets": {
-      "mtimeMs": 1726039065220.0117,
+      "mtimeMs": 1726989602801.9905,
       "children": [
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts",
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts",
-        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkGraphics2D.d.ts"
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkGraphics2D.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.BasicServicesKit.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts"
       ],
       "parent": [
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Index.ets"
@@ -4755,19 +4758,17 @@
       "error": false
     },
     "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Index.ets": {
-      "mtimeMs": 1726799135639.3137,
+      "mtimeMs": 1726988576690.111,
       "children": [
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.router.d.ts",
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Home/HomePage.ets",
         "/Users/wizet/Documents/HM/FirstTest/FirstTestStaticLibrary/Index.ets",
         "/Users/wizet/Documents/HM/FirstTest/FirstTestShareLibrary/Index.ets",
-        "/Users/wizet/Documents/HM/FirstTest/FirstTestStaticLibrary/Index.ets",
-        "/Users/wizet/Documents/HM/FirstTest/FirstTestShareLibrary/Index.ets"
+        "/Users/wizet/Documents/HM/FirstTest/FirstTestStaticLibrary/Index.ets"
       ],
       "parent": [],
       "error": true,
       "errorCodes": [
-        -1,
         28007
       ]
     },

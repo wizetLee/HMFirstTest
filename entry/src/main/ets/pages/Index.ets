@@ -16,7 +16,6 @@ struct Index {
   //Entry 生命周期
   onPageShow(): void {
     console.log(`${this.componentName} - onPageShow`)
-
     // d()
     // d2()
     // duplicationOfName()
@@ -28,7 +27,9 @@ struct Index {
     //FIMXE: how about
 
     setTimeout(() => {
-      let url = `pages/Swiper/Swiper`
+      return
+      // let url = `pages/Swiper/Swiper`
+      let url = `pages/Resource/Resource`
       //let url = '@bundle:com.example.firsttest/FirstTestShareLibrary/ets/pages/ExportTestEntry'
       sysRouter.pushUrl({ url: url, params: null }, sysRouter.RouterMode.Standard, (err) => {
         if (err) {
@@ -65,7 +66,6 @@ struct Index {
         // import('ets/pages/Home/HomePage');
 
         // 1
-        //FIXME:  为什么会失效?
         sysRouter.pushNamedRoute({ name: 'HomePage', params: null }, sysRouter.RouterMode.Standard, (err) => {
           if (err) {
             console.error(`Invoke pushUrl failed, code is ${err.code}, message is ${err.message}`);
@@ -110,13 +110,20 @@ struct Index {
           console.info('Invoke pushUrl succeeded.');
         });
       })
-    }.justifyContent(FlexAlign.Center).alignItems(HorizontalAlign.Center).width(`100%`).height(`100%`).key("onTap").id("onTap")
+    }
+    .justifyContent(FlexAlign.Center)
+    .alignItems(HorizontalAlign.Center)
+    .width(`100%`)
+    .height(`100%`)
+    .key("onTap")
+    .id("onTap")
 
   }
 
   /// 异步方法
   async ccc() {
   }
+
 }
 
 export declare type NamedRouterOptions = sysRouter.NamedRouterOptions;

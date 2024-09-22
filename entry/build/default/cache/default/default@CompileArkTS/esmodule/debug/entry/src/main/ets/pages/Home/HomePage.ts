@@ -5,6 +5,7 @@ interface HomePage_Params {
     componentName?;
 }
 import router from "@ohos:router";
+import promptAction from "@ohos:promptAction";
 class HomePage extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
         super(parent, __localStorage, elmtId, extraInfo);
@@ -48,6 +49,22 @@ class HomePage extends ViewPU {
     aboutToRecycle(): void {
         console.log(`${this.componentName} - aboutToRecycle`);
     }
+    onAttach(callback: Callback<void, void>): CommonAttribute {
+        promptAction.showToast({
+            message: 'The text is shown',
+            duration: 2000,
+            bottom: 500
+        });
+        return this;
+    }
+    onDetach(callback: Callback<void, void>): CommonAttribute {
+        promptAction.showToast({
+            message: 'The text is hidden',
+            duration: 2000,
+            bottom: 500
+        });
+        return this;
+    }
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Column.create();
@@ -60,6 +77,10 @@ class HomePage extends ViewPU {
             Button.createWithLabel("路由到My");
             Button.onClick(() => {
                 router.pushUrl({ url: "pages/My/My", params: null });
+            });
+            Button.onAttach(() => {
+            });
+            Button.onDetach(() => {
             });
         }, Button);
         Button.pop();

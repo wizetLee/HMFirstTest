@@ -51,5 +51,9 @@
 			"type":	"string",
 			"name":	"page_show",
 			"id":	"0x03000000"
+		}, {
+			"type":	"float",
+			"name":	"this_is_float_value",
+			"id":	"0x03000001"
 		}]
 }
