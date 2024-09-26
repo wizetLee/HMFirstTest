@@ -64,5 +64,29 @@
     "TapGesture",
     "PanGesture",
     "If"
+  ],
+  "entry/src/main/ets/pages/Layout/Layout.ets": [
+    "Repeat",
+    "Scroll",
+    "Column",
+    "RelativeContainer",
+    "Text",
+    "Flex",
+    "Row",
+    "Slider",
+    "Select",
+    "Toggle",
+    "Stack",
+    "Image",
+    "Circle",
+    "Rect",
+    "If"
+  ],
+  "entry/src/main/ets/pages/State/State.ets": [
+    "Column",
+    "ForEach",
+    "Row",
+    "Text",
+    "Blank"
   ]
 }

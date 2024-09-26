@@ -55,5 +55,13 @@
 			"type":	"float",
 			"name":	"this_is_float_value",
 			"id":	"0x03000001"
+		}, {
+			"type":	"media",
+			"name":	"dlam",
+			"id":	"0x03000002"
+		}, {
+			"type":	"media",
+			"name":	"saber",
+			"id":	"0x03000003"
 		}]
 }

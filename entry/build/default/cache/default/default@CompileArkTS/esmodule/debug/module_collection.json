@@ -1,6 +1,1 @@
-{
-  "entry/src/main/ets/pages/Home/HomePage.ets": [
-    "ohos.router",
-    "ohos.promptAction"
-  ]
-}
+{}

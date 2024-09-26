@@ -50,19 +50,10 @@ class HomePage extends ViewPU {
         console.log(`${this.componentName} - aboutToRecycle`);
     }
     onAttach(callback: Callback<void, void>): CommonAttribute {
-        promptAction.showToast({
-            message: 'The text is shown',
-            duration: 2000,
-            bottom: 500
-        });
+        //FIXME: 不生效的原因是什么
         return this;
     }
     onDetach(callback: Callback<void, void>): CommonAttribute {
-        promptAction.showToast({
-            message: 'The text is hidden',
-            duration: 2000,
-            bottom: 500
-        });
         return this;
     }
     initialRender() {
@@ -81,6 +72,11 @@ class HomePage extends ViewPU {
             Button.onAttach(() => {
             });
             Button.onDetach(() => {
+                promptAction.showToast({
+                    message: 'The text is hidden',
+                    duration: 2000,
+                    bottom: 500
+                });
             });
         }, Button);
         Button.pop();

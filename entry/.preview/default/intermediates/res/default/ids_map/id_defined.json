@@ -47,5 +47,13 @@
 			"type":	"media",
 			"name":	"startIcon",
 			"id":	"0x0100000B"
+		}, {
+			"type":	"float",
+			"name":	"this_is_float_value",
+			"id":	"0x03000000"
+		}, {
+			"type":	"string",
+			"name":	"page_show",
+			"id":	"0x03000001"
 		}]
 }

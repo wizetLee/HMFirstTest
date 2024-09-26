@@ -18,6 +18,8 @@ struct Index {
     console.log(`${this.componentName} - onPageShow`)
     // d()
     // d2()
+
+
     // duplicationOfName()
     // duplicationOfName()
 
@@ -27,11 +29,13 @@ struct Index {
     //FIMXE: how about
 
     setTimeout(() => {
-      return
       // let url = `pages/Swiper/Swiper`
-      let url = `pages/Resource/Resource`
+      // let url = `pages/Resource/Resource`
+      // let url = `pages/Layout/Layout`
+      let url = `pages/State/State`
       //let url = '@bundle:com.example.firsttest/FirstTestShareLibrary/ets/pages/ExportTestEntry'
-      sysRouter.pushUrl({ url: url, params: null }, sysRouter.RouterMode.Standard, (err) => {
+      let params: Record<string, string> = { "a_param": "哈哈😂" };
+      sysRouter.pushUrl({ url: url, params: params }, sysRouter.RouterMode.Standard, (err) => {
         if (err) {
           console.error(`Invoke pushUrl failed, code is ${err.code}, message is ${err.message}`);
           return;
@@ -123,7 +127,6 @@ struct Index {
   /// 异步方法
   async ccc() {
   }
-
 }
 
 export declare type NamedRouterOptions = sysRouter.NamedRouterOptions;

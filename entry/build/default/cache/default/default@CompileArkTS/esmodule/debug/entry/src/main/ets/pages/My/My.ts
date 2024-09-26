@@ -55,6 +55,26 @@ class MyPage extends ViewPU {
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create("这是我");
+            Text.onClick((event) => {
+                event.displayX;
+                event.displayY;
+                event.windowX;
+                event.windowY;
+                event.target;
+                event.x;
+                event.y;
+                // event.screenX // event.windowX
+                // event.screenY // event.windowY
+                // event.pressure
+                event.timestamp;
+                event.preventDefault;
+            });
+            Text.onFocus(() => {
+                // 获得焦点
+            });
+            Text.onBlur(() => {
+                // 失去焦点
+            });
         }, Text);
         Text.pop();
         Column.pop();

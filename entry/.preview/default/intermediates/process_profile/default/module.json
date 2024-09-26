@@ -73,6 +73,11 @@
 		"packageName": "entry",
 		"virtualMachine": "ark12.0.2.0",
 		"compileMode": "esmodule",
-		"dependencies": []
+		"dependencies": [
+			{
+				"moduleName": "FirstTestShareLibrary",
+				"versionCode": 1000000
+			}
+		]
 	}
 }

@@ -1,22 +1,28 @@
 {
   "modulePathMap": {
-    "entry": "/Users/wizet/FirstTest/entry"
+    "entry": "/Users/wizet/Documents/HM/FirstTest/entry",
+    "FirstTestStaticLibrary": "/Users/wizet/Documents/HM/FirstTest/FirstTestStaticLibrary",
+    "FirstTestShareLibrary": "/Users/wizet/Documents/HM/FirstTest/FirstTestShareLibrary"
   },
   "compileMode": "esmodule",
-  "projectRootPath": "/Users/wizet/FirstTest",
-  "nodeModulesPath": "/Users/wizet/FirstTest/entry/.preview/default/intermediates/loader_out/default/node_modules",
+  "projectRootPath": "/Users/wizet/Documents/HM/FirstTest",
+  "nodeModulesPath": "/Users/wizet/Documents/HM/FirstTest/entry/.preview/default/intermediates/loader_out/default/node_modules",
   "byteCodeHarInfo": {},
   "declarationEntry": [],
   "moduleName": "entry",
-  "hspNameOhmMap": {},
+  "hspNameOhmMap": {
+    "FirstTestSharelibrary": "@bundle:com.example.firsttest/FirstTestShareLibrary/Index"
+  },
   "harNameOhmMap": {},
   "packageManagerType": "ohpm",
   "compileEntry": [],
   "otherCompileFiles": [],
   "dynamicImportLibInfo": {},
   "routerMap": [],
-  "hspResourcesMap": {},
-  "anBuildOutPut": "/Users/wizet/FirstTest/entry/.preview/default/intermediates/loader_out/default/an/arm64-v8a",
+  "hspResourcesMap": {
+    "FirstTestShareLibrary": "/Users/wizet/Documents/HM/FirstTest/FirstTestShareLibrary/.preview/default/intermediates/res/default/ResourceTable.txt"
+  },
+  "anBuildOutPut": "/Users/wizet/Documents/HM/FirstTest/entry/.preview/default/intermediates/loader_out/default/an/arm64-v8a",
   "anBuildMode": "type",
   "buildConfigPath": ".preview/config/buildConfig.json"
 }

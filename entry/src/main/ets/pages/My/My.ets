@@ -29,6 +29,8 @@ struct MyPage {
 
   build() {
     Column() {
+
+
       Text("这是我").onClick((event) => {
         event.displayX
         event.displayY

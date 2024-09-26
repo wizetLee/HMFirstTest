@@ -162,7 +162,9 @@
         "/Users/wizet/FirstTest/entry/src/main/ets/pages/Index.ets",
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/entryability/EntryAbility.ets",
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Home/HomePage.ets",
-        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Canvas/Canvas.ets"
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Canvas/Canvas.ets",
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Layout/Layout.ets",
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/State/State.ets"
       ],
       "error": false
     },
@@ -4744,7 +4746,7 @@
       "error": false
     },
     "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Home/HomePage.ets": {
-      "mtimeMs": 1726989602801.9905,
+      "mtimeMs": 1727226808661.979,
       "children": [
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts",
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts",
@@ -4758,7 +4760,7 @@
       "error": false
     },
     "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Index.ets": {
-      "mtimeMs": 1726988576690.111,
+      "mtimeMs": 1727339910520.0183,
       "children": [
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.router.d.ts",
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Home/HomePage.ets",
@@ -4917,6 +4919,22 @@
       "parent": [
         "/Users/wizet/Documents/HM/FirstTest/FirstTestShareLibrary/Index.ets"
       ],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Layout/Layout.ets": {
+      "mtimeMs": 1727339954234.9028,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts"
+      ],
+      "parent": [],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/State/State.ets": {
+      "mtimeMs": 1727341526068.904,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts"
+      ],
+      "parent": [],
       "error": false
     }
   }

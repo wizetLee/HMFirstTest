@@ -7,6 +7,8 @@
     "pages/Canvas/Canvas",
     "pages/Swiper/Swiper",
     "pages/Gesture/Gesture",
-    "pages/Resource/Resource"
+    "pages/Resource/Resource",
+    "pages/Layout/Layout",
+    "pages/State/State"
   ]
 }

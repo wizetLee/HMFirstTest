@@ -2,7 +2,9 @@ string EntryAbility_desc 0x01000007
 string EntryAbility_label 0x01000008
 string app_name 0x01000000
 string module_desc 0x01000009
+string page_show 0x03000001
 color start_window_background 0x01000006
+float this_is_float_value 0x03000000
 media app_icon 0x01000001
 media background 0x01000002
 media foreground 0x01000005
