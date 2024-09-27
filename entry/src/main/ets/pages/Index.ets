@@ -32,7 +32,9 @@ struct Index {
       // let url = `pages/Swiper/Swiper`
       // let url = `pages/Resource/Resource`
       // let url = `pages/Layout/Layout`
-      let url = `pages/State/State`
+      // let url =  `pages/PopUpWindow/PopUpWindow`
+      // let url = `pages/State/State`
+      let url = `pages/Componment/Componment`
       //let url = '@bundle:com.example.firsttest/FirstTestShareLibrary/ets/pages/ExportTestEntry'
       let params: Record<string, string> = { "a_param": "哈哈😂" };
       sysRouter.pushUrl({ url: url, params: params }, sysRouter.RouterMode.Standard, (err) => {
@@ -119,7 +121,6 @@ struct Index {
     .alignItems(HorizontalAlign.Center)
     .width(`100%`)
     .height(`100%`)
-    .key("onTap")
     .id("onTap")
 
   }

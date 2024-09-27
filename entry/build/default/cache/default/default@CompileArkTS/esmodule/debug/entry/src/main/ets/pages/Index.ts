@@ -61,7 +61,9 @@ class Index extends ViewPU {
             // let url = `pages/Swiper/Swiper`
             // let url = `pages/Resource/Resource`
             // let url = `pages/Layout/Layout`
-            let url = `pages/State/State`;
+            // let url =  `pages/PopUpWindow/PopUpWindow`
+            // let url = `pages/State/State`
+            let url = `pages/Componment/Componment`;
             //let url = '@bundle:com.example.firsttest/FirstTestShareLibrary/ets/pages/ExportTestEntry'
             let params: Record<string, string> = { "a_param": "哈哈😂" };
             sysRouter.pushUrl({ url: url, params: params }, sysRouter.RouterMode.Standard, (err) => {
@@ -95,7 +97,6 @@ class Index extends ViewPU {
             Column.alignItems(HorizontalAlign.Center);
             Column.width(`100%`);
             Column.height(`100%`);
-            Column.key("onTap");
             Column.id("onTap");
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {

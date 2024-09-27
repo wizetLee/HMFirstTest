@@ -9,6 +9,8 @@
     "pages/Gesture/Gesture",
     "pages/Resource/Resource",
     "pages/Layout/Layout",
-    "pages/State/State"
+    "pages/State/State",
+    "pages/PopUpWindow/PopUpWindow",
+    "pages/Componment/Componment"
   ]
 }

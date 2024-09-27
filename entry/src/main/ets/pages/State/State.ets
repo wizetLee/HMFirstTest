@@ -1,4 +1,5 @@
 import { LengthMetricsUnit } from '@kit.ArkUI'
+import { LazyDataSource } from './LazyDataSource'
 
 @Entry({ routeName: "StatePage" })
 @Component
@@ -36,64 +37,86 @@ struct StatePage {
     new StatePageElementModel("444", 4),
     new StatePageElementModel("555", 5),
   ]
+  @State lazyList: LazyDataSource<StatePageElementModel> = new LazyDataSource([
+    new StatePageElementModel("l111", 1),
+    new StatePageElementModel("l222", 2),
+    new StatePageElementModel("l333", 3),
+    new StatePageElementModel("l444", 4),
+    new StatePageElementModel("l555", 5),
+  ]);
 
   build() {
-    this.lazyForEachTest()
+    Column() {
+      this.lazyForEachTest()
+    }.backgroundColor(Color.White)
   }
 
   @Builder
   lazyForEachTest() {
-    Column() {
-      LazyForEach()
+    LazyForEach(this.lazyList, (element: StatePageElementModel, index) => {
+      StatePageComponent({ model: element })
+      // 下面这么写是不行的...🙅
+      // Column() {
+      //   Row() {
+      //     Text(element.name)
+      //     Blank().width(20)
+      //     Text("${element.age}")
+      //   }.height(55).onClick(() => {
+      //     this.list[index].name = "呵呵"
+      //     this.list[index].age = 998
+      //   })
+      //   Blank().height(1).backgroundColor(Color.Black)
+      // }
+    }, (item: StatePageElementModel) => {
+      return item.name + item.age
     }
+    )
   }
 
   @Builder
   forEachTest() {
-    Column() {
-      ForEach(this.list, (element: StatePageElementModel, index) => {
-        StatePageComponent({ model: element })
-        // 下面这么写是不行的...🙅
-        // Column() {
-        //   Row() {
-        //     Text(element.name)
-        //     Blank().width(20)
-        //     Text("${element.age}")
-        //   }.height(55).onClick(() => {
-        //     this.list[index].name = "呵呵"
-        //     this.list[index].age = 998
-        //   })
-        //   Blank().height(1).backgroundColor(Color.Black)
-        // }
-      }, (item: StatePageElementModel) => {
-        return item.name + item.age
-      }
-      )
-    }.backgroundColor(Color.White)
+    ForEach(this.list, (element: StatePageElementModel, index) => {
+      StatePageComponent({ model: element })
+      // 下面这么写是不行的...🙅
+      // Column() {
+      //   Row() {
+      //     Text(element.name)
+      //     Blank().width(20)
+      //     Text("${element.age}")
+      //   }.height(55).onClick(() => {
+      //     this.list[index].name = "呵呵"
+      //     this.list[index].age = 998
+      //   })
+      //   Blank().height(1).backgroundColor(Color.Black)
+      // }
+    }, (item: StatePageElementModel) => {
+      return item.name + item.age
+    }
+    )
   }
 }
 
-class ObjExtendIDataSource implements IDataSource {
-
-  private listeners: DataChangeListener[] = [];
-  private originDataArray: string[] = [];
-
-  public totalCount(): number {
-    return 0;
-  }
-
-  getData(index: number): any {
-    throw new Error('Method not implemented.')
-  }
-
-  registerDataChangeListener(listener: DataChangeListener): void {
-    throw new Error('Method not implemented.')
-  }
-
-  unregisterDataChangeListener(listener: DataChangeListener): void {
-    throw new Error('Method not implemented.')
-  }
-}
+// class ObjExtendIDataSource implements IDataSource {
+//
+//   private listeners: DataChangeListener[] = [];
+//   private originDataArray: string[] = [];
+//
+//   public totalCount(): number {
+//     return 0;
+//   }
+//
+//   getData(index: number): any {
+//     throw new Error('Method not implemented.')
+//   }
+//
+//   registerDataChangeListener(listener: DataChangeListener): void {
+//     throw new Error('Method not implemented.')
+//   }
+//
+//   unregisterDataChangeListener(listener: DataChangeListener): void {
+//     throw new Error('Method not implemented.')
+//   }
+// }
 
 
 @Component
@@ -230,7 +253,6 @@ class StatePageElementModel {
 // Basic implementation of IDataSource to handle data listener
 class BasicDataSource implements IDataSource {
   private listeners: DataChangeListener[] = [];
-
   private originDataArray: string[] = [];
 
   public totalCount(): number {
@@ -293,3 +315,53 @@ class BasicDataSource implements IDataSource {
     })
   }
 }
+
+
+class MyDataSource extends BasicDataSource {
+  private dataArray: string[] = [];
+
+  public totalCount(): number {
+    return this.dataArray.length;
+  }
+
+  public getData(index: number): string {
+    return this.dataArray[index];
+  }
+
+  public addData(index: number, data: string): void {
+    this.dataArray.splice(index, 0, data);
+    this.notifyDataAdd(index);
+  }
+
+  public pushData(data: string): void {
+    this.dataArray.push(data);
+    this.notifyDataAdd(this.dataArray.length - 1);
+  }
+}
+
+// @Entry
+// @Component
+// struct MyComponent {
+//   private data: MyDataSource = new MyDataSource();
+//
+//   aboutToAppear() {
+//     for (let i = 0; i <= 20; i++) {
+//       this.data.pushData(`Hello ${i}`)
+//     }
+//   }
+//
+//   build() {
+//     List({ space: 3 }) {
+//       LazyForEach(this.data, (item: string) => {
+//         ListItem() {
+//           Row() {
+//             Text(item).fontSize(50)
+//               .onAppear(() => {
+//                 console.info("appear:" + item)
+//               })
+//           }.margin({ left: 10, right: 10 })
+//         }
+//       }, (item: string) => item)
+//     }.cachedCount(5)
+//   }
+// }

@@ -1,4 +1,4 @@
-import { LengthMetrics, matrix4, router } from '@kit.ArkUI'
+import { CircleShape, EllipseShape, LengthMetrics, matrix4, PathShape, RectShape, router } from '@kit.ArkUI'
 
 @Entry({ routeName: "LayoutPage" })
 @Component
@@ -55,6 +55,7 @@ struct LayoutPage {
   @State rad: number = 40;
   @State satVal: number = 0.8;
   @State briVal: number = 1.5;
+  @State progressMask: ProgressMask = new ProgressMask(0, 100, Color.Green)
 
   build() {
     Scroll() {
@@ -465,13 +466,93 @@ struct LayoutPage {
           .padding(10)
           .clip(false)
           .width('50%')
-          .pixelStretchEffect({top:10,left:10,right:10,bottom:10 }) // 扩展边沿像素
+          .pixelStretchEffect({
+            top: 10,
+            left: 10,
+            right: 10,
+            bottom: 10
+          }) // 扩展边沿像素
         Rect()
           .radius(10)
-          .width(100).height(200)
+          .width(100)
+          .height(200)
           .fill(Color.Pink)
           .stroke(Color.Red)
           .strokeWidth(2)
+
+
+        RelativeContainer() {
+
+        }
+        .width(100)
+        .height(100)
+        .backgroundColor(Color.Orange)
+        // .clipShape(
+        //   // new CircleShape({width: 100, height: 100})
+        //   //new EllipseShape
+        //   //new PathShape({commands: undefined}) //FIXME: 需要去了解下
+        //   new RectShape({
+        //     // radiusWidth: 20,
+        //     // radiusHeight: 5,
+        //     // radius: 19
+        //   }).width(100).height(100)
+        // )
+        .maskShape(new RectShape({
+          // radiusWidth: 20,
+          // radiusHeight: 5,
+          radius: 19
+        })
+          .width(100)
+          .height(100)
+        )
+        .mask(
+          this.progressMask // 很奇怪的遮罩效果
+        )
+
+
+        Slider({
+          // value: this.progressmask.,
+          min: 0,
+          max: 100,
+          style: SliderStyle.OutSet
+        })
+          .onChange((value: number, mode: SliderChangeMode) => {
+            this.progressMask.updateProgress(value)
+          })
+          .padding({ left: 15, right: 15 })
+        //FIXME:
+
+
+        RelativeContainer() {
+
+        }
+        .width(100)
+        .height(100)
+        .linearGradient(
+          {
+            colors: [[Color.Pink, 0.3], [Color.Orange, 0.6], [Color.Blue, 1]]
+          }
+        )
+        // .sweepGradient(
+        //   {
+        //     center: [50, 50],
+        //     start: 0,
+        //     // end: 360,
+        //     end: 180,
+        //     // rotation: 45, // 旋转角度
+        //     // repeating: true, // 渐变颜色是否重复
+        //     colors: [[0xff0000, 0.0], [0x0000ff, 0.3], [0xffff00, 0.5], [Color.Green, 1]] // 数组末尾元素占比小于1时满足重复着色效果
+        //   }
+        // )
+        .radialGradient(
+          {
+            center: [50, 50],
+            radius: 60,
+            // repeating: true,
+            colors: [[0xff0000, 0.0], [0x0000ff, 0.33], [0xffff00, 0.66], [Color.Green, 1]] // 数组末尾元素占比小于1时满足重复着色效果
+          }
+        )
+        .backgroundColor(Color.Orange)
       }
     }
   }

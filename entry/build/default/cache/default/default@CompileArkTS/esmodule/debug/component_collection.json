@@ -84,9 +84,30 @@
   ],
   "entry/src/main/ets/pages/State/State.ets": [
     "Column",
+    "LazyForEach",
     "ForEach",
     "Row",
     "Text",
-    "Blank"
+    "Blank",
+    "If"
+  ],
+  "entry/src/main/ets/pages/State/LazyDataSource.ets": [
+    "If"
+  ],
+  "entry/src/main/ets/pages/PopUpWindow/PopUpWindow.ets": [
+    "Column",
+    "Flex",
+    "Text",
+    "Divider",
+    "RelativeContainer",
+    "If"
+  ],
+  "entry/src/main/ets/pages/Componment/Componment.ets": [
+    "Column",
+    "RelativeContainer",
+    "Button",
+    "Row",
+    "Text",
+    "If"
   ]
 }
