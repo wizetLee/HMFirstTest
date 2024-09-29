@@ -165,7 +165,10 @@
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Canvas/Canvas.ets",
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Layout/Layout.ets",
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/State/State.ets",
-        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/PopUpWindow/PopUpWindow.ets"
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/PopUpWindow/PopUpWindow.ets",
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/ModalTransition/ModalTransition.ets",
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/SafeArea/SafeArea.ets",
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Gesture/Gesture.ets"
       ],
       "error": false
     },
@@ -420,7 +423,8 @@
       "parent": [
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.AbilityKit.d.ts",
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.arkui.UIContext.d.ts",
-        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.app.ability.sendableContextManager.d.ets"
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.app.ability.sendableContextManager.d.ets",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/hms/ets/api/@hms.ai.textReader.d.ets"
       ],
       "error": false
     },
@@ -1087,7 +1091,9 @@
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.security.cert.d.ts",
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.security.cryptoFramework.d.ts",
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.effectKit.d.ts",
-        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.graphics.displaySync.d.ts"
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.graphics.displaySync.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/hms/ets/api/@hms.ai.AICaption.d.ets",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.multimedia.audio.d.ts"
       ],
       "error": false
     },
@@ -1179,7 +1185,8 @@
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts",
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.arkui.advanced.FoldSplitContainer.d.ets",
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/build-tools/ets-loader/declarations/folder_stack.d.ts",
-        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/build-tools/ets-loader/declarations/navigation.d.ts"
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/build-tools/ets-loader/declarations/navigation.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/hms/ets/api/@hms.ai.textReader.d.ets"
       ],
       "error": false
     },
@@ -1288,7 +1295,8 @@
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.file.photoAccessHelper.d.ts",
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/build-tools/ets-loader/declarations/common.d.ts",
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.web.webview.d.ts",
-        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.effectKit.d.ts"
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.effectKit.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/hms/ets/api/@hms.ai.textReader.d.ets"
       ],
       "error": false
     },
@@ -4726,13 +4734,14 @@
       "error": false
     },
     "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/entryability/EntryAbility.ets": {
-      "mtimeMs": 1726712696607.0518,
+      "mtimeMs": 1727590769471.7307,
       "children": [
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.AbilityKit.d.ts",
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.PerformanceAnalysisKit.d.ts",
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts",
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.BasicServicesKit.d.ts",
-        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.resourceManager.d.ts"
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.resourceManager.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/hms/ets/kits/@kit.SpeechKit.d.ts"
       ],
       "parent": [],
       "error": false
@@ -4761,7 +4770,7 @@
       "error": false
     },
     "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Index.ets": {
-      "mtimeMs": 1727424914509.0605,
+      "mtimeMs": 1727602512987.0376,
       "children": [
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.router.d.ts",
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Home/HomePage.ets",
@@ -4920,7 +4929,7 @@
       "error": false
     },
     "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Layout/Layout.ets": {
-      "mtimeMs": 1727413855527.7007,
+      "mtimeMs": 1727580042759.8562,
       "children": [
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts"
       ],
@@ -4956,6 +4965,76 @@
     },
     "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/PopUpWindow/PopUpWindow.ets": {
       "mtimeMs": 1727424572448.1958,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts"
+      ],
+      "parent": [],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/ModalTransition/ModalTransition.ets": {
+      "mtimeMs": 1727576897064.9739,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts"
+      ],
+      "parent": [],
+      "error": false
+    },
+    "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/hms/ets/kits/@kit.SpeechKit.d.ts": {
+      "mtimeMs": 1722994960000,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/hms/ets/api/@hms.ai.textReader.d.ets",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/hms/ets/api/@hms.ai.AICaption.d.ets"
+      ],
+      "parent": [
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/SafeArea/SafeArea.ets",
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/entryability/EntryAbility.ets"
+      ],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/SafeArea/SafeArea.ets": {
+      "mtimeMs": 1727591615141.0464,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/hms/ets/kits/@kit.SpeechKit.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts"
+      ],
+      "parent": [],
+      "error": false
+    },
+    "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/hms/ets/api/@hms.ai.textReader.d.ets": {
+      "mtimeMs": 1722994960000,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.multimedia.image.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.app.ability.common.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.window.d.ts"
+      ],
+      "parent": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/hms/ets/kits/@kit.SpeechKit.d.ts"
+      ],
+      "error": false
+    },
+    "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/hms/ets/api/@hms.ai.AICaption.d.ets": {
+      "mtimeMs": 1722994960000,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.multimedia.audio.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.base.d.ts"
+      ],
+      "parent": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/hms/ets/kits/@kit.SpeechKit.d.ts"
+      ],
+      "error": false
+    },
+    "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.multimedia.audio.d.ts": {
+      "mtimeMs": 1722994978000,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.base.d.ts"
+      ],
+      "parent": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/hms/ets/api/@hms.ai.AICaption.d.ets"
+      ],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Gesture/Gesture.ets": {
+      "mtimeMs": 1727594292075.6392,
       "children": [
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts"
       ],

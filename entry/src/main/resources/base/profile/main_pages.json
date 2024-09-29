@@ -11,6 +11,9 @@
     "pages/Layout/Layout",
     "pages/State/State",
     "pages/PopUpWindow/PopUpWindow",
-    "pages/Componment/Componment"
+    "pages/Componment/Componment",
+    "pages/ModalTransition/ModalTransition",
+    "pages/SafeArea/SafeArea",
+    "pages/Grid/Grid"
   ]
 }

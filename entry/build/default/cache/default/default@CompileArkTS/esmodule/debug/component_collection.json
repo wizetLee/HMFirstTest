@@ -60,6 +60,8 @@
   ],
   "entry/src/main/ets/pages/Gesture/Gesture.ets": [
     "Column",
+    "Flex",
+    "Row",
     "RelativeContainer",
     "TapGesture",
     "PanGesture",
@@ -103,11 +105,34 @@
     "If"
   ],
   "entry/src/main/ets/pages/Componment/Componment.ets": [
+    "Scroll",
     "Column",
     "RelativeContainer",
     "Button",
     "Row",
     "Text",
     "If"
+  ],
+  "entry/src/main/ets/pages/ModalTransition/ModalTransition.ets": [
+    "Column",
+    "Button"
+  ],
+  "entry/src/main/ets/pages/SafeArea/SafeArea.ets": [
+    "Column",
+    "Row",
+    "Stack",
+    "Button",
+    "TextInput",
+    "RelativeContainer",
+    "TextArea",
+    "Text",
+    "If"
+  ],
+  "entry/src/main/ets/pages/Grid/Grid.ets": [
+    "Column",
+    "GridRow",
+    "Row",
+    "ForEach",
+    "GridCol"
   ]
 }

@@ -63,8 +63,12 @@ class Index extends ViewPU {
             // let url = `pages/Layout/Layout`
             // let url =  `pages/PopUpWindow/PopUpWindow`
             // let url = `pages/State/State`
-            let url = `pages/Componment/Componment`;
+            // let url = `pages/Componment/Componment`
+            // let url = `pages/ModalTransition/ModalTransition`
             //let url = '@bundle:com.example.firsttest/FirstTestShareLibrary/ets/pages/ExportTestEntry'
+            // let url = `pages/SafeArea/SafeArea`
+            // let url = `pages/Gesture/Gesture`
+            let url = `pages/Grid/Grid`;
             let params: Record<string, string> = { "a_param": "哈哈😂" };
             sysRouter.pushUrl({ url: url, params: params }, sysRouter.RouterMode.Standard, (err) => {
                 if (err) {

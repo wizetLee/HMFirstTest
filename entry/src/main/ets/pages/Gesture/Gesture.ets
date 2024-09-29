@@ -1,3 +1,5 @@
+import { LengthMetrics, LengthMetricsUnit } from '@kit.ArkUI'
+
 @Component
 @Entry({ routeName: "GesturePage" })
 struct GesturePage {
@@ -28,11 +30,42 @@ struct GesturePage {
   }
 
   build() {
-
     Column() {
+      Flex({
+        direction: FlexDirection.Row,
+        justifyContent: FlexAlign.End,
+        alignItems: ItemAlign.End,
+        space: {
+          main: LengthMetrics.vp(10),
+          cross: LengthMetrics.vp(10),
+        }
+      }) {
+        RelativeContainer()
+          .width(100)
+          .height(100)
+          .backgroundColor(Color.Yellow)
+
+        RelativeContainer()
+          .width(200)
+          .height(200)
+          .backgroundColor(Color.Blue)
+      }
 
       RelativeContainer()
-        .width(`100%`)
+        .width(10)
+        .height(100)//	提供系统内置手势与响应链上其他组件的手势设置并行关系的回调事件，当该组件做触摸碰撞测试时，会触发用户定义的回调来形成手势并行关系。
+        .shouldBuiltInRecognizerParallelWith((current: GestureRecognizer, others: Array<GestureRecognizer>) => {
+          current.getTag() // 当前手势识别器的tag。
+          current.getType() //
+          let info = current.getEventTargetInfo();
+          info.getId()//
+
+          return current;
+        })
+
+
+      RelativeContainer()
+        .width(`70%`)
         .height(`50%`)
         .backgroundColor(Color.Blue)// .gesture( // 没有滑动更新数值的回调，不适合处理
           //   LongPressGesture({ fingers: undefined, repeat: true, duration: undefined })
@@ -49,6 +82,8 @@ struct GesturePage {
         .gesture(
           TapGesture({ count: 1 })
             .onAction((event: GestureEvent) => {
+              //event.repeat
+
               console.log(`gesture - TapGesture`)
               if (event.fingerList.length > 0) {
                 let finger = event.fingerList[0];
@@ -58,6 +93,11 @@ struct GesturePage {
         )
         .gesture(
           PanGesture().onActionStart((event: GestureEvent) => {
+            // event.offsetX
+            // event.offsetY
+            // event.velocityX
+            // event.velocityY
+            // event.velocity
             if (event.fingerList.length > 0) {
               let finger = event.fingerList[0];
               console.log(`gesture - PanGesture - onActionStart finger ${finger.localX} ${finger.localY}`)
@@ -79,12 +119,41 @@ struct GesturePage {
         )
       // .gesture(
       //   PinchGesture()
+      //     .onActionStart((event: GestureEvent) => {
+      //       event.pinchCenterX
+      //       event.pinchCenterY
+      //       event.scale
+      //     })
+      //     .onActionUpdate((event: GestureEvent) => {
+      //     })
+      //     .onActionEnd((event: GestureEvent) => {
+      //
+      //     })
+      //     .onActionCancel(() => {
+      //
+      //     })
       // )
       // .gesture(
       //   RotationGesture()
+      //     .onActionStart((event: GestureEvent) => {
+      //       event.angle
+      //     })
+      //     .onActionUpdate((event: GestureEvent) => {
+      //     })
+      //     .onActionEnd((event: GestureEvent) => {
+      //
+      //     })
+      //     .onActionCancel(() => {
+      //
+      //     })
       // )
+
       // .gesture(
       //   SwipeGesture()
+      //     .onAction((event: GestureEvent) => {
+      //       event.angle
+      //       event.speed
+      //     })
       // )
       // .gesture(
       //   GestureGroup(GestureMode.Sequence,
