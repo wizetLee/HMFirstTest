@@ -14,6 +14,8 @@
     "pages/Componment/Componment",
     "pages/ModalTransition/ModalTransition",
     "pages/SafeArea/SafeArea",
-    "pages/Grid/Grid"
+    "pages/Grid/Grid",
+    "pages/SideBar/SideBar",
+    "pages/List/List"
   ]
 }

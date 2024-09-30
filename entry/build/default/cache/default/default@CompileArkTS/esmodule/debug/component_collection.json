@@ -133,6 +133,19 @@
     "GridRow",
     "Row",
     "ForEach",
-    "GridCol"
+    "GridCol",
+    "Text",
+    "ColumnSplit",
+    "RowSplit"
+  ],
+  "entry/src/main/ets/pages/SideBar/SideBar.ets": [
+    "SideBarContainer",
+    "Column",
+    "ForEach",
+    "Image",
+    "Text"
+  ],
+  "entry/src/main/ets/pages/List/List.ets": [
+    "Column"
   ]
 }

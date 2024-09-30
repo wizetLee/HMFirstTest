@@ -68,7 +68,9 @@ class Index extends ViewPU {
             //let url = '@bundle:com.example.firsttest/FirstTestShareLibrary/ets/pages/ExportTestEntry'
             // let url = `pages/SafeArea/SafeArea`
             // let url = `pages/Gesture/Gesture`
-            let url = `pages/Grid/Grid`;
+            // let url = `pages/Grid/Grid`
+            // let url = `pages/SideBar/SideBar`
+            let url = `pages/List/List`;
             let params: Record<string, string> = { "a_param": "哈哈😂" };
             sysRouter.pushUrl({ url: url, params: params }, sysRouter.RouterMode.Standard, (err) => {
                 if (err) {

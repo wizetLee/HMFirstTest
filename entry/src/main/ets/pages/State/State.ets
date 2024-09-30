@@ -1,5 +1,5 @@
 import { LengthMetricsUnit } from '@kit.ArkUI'
-import { LazyDataSource } from './LazyDataSource'
+import { LazyDataSource } from '../../tool/LazyDataSource'
 
 @Entry({ routeName: "StatePage" })
 @Component

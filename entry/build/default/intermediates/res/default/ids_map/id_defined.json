@@ -63,5 +63,9 @@
 			"type":	"media",
 			"name":	"saber",
 			"id":	"0x03000003"
+		}, {
+			"type":	"media",
+			"name":	"setting",
+			"id":	"0x03000004"
 		}]
 }
