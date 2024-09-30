@@ -93,7 +93,7 @@
     "Blank",
     "If"
   ],
-  "entry/src/main/ets/pages/State/LazyDataSource.ets": [
+  "entry/src/main/ets/tool/LazyDataSource.ets": [
     "If"
   ],
   "entry/src/main/ets/pages/PopUpWindow/PopUpWindow.ets": [
@@ -146,6 +146,15 @@
     "Text"
   ],
   "entry/src/main/ets/pages/List/List.ets": [
-    "Column"
+    "Scroller",
+    "Column",
+    "List",
+    "ForEach",
+    "ListItem",
+    "Text",
+    "Button",
+    "ListItemGroup",
+    "LazyForEach",
+    "If"
   ]
 }
