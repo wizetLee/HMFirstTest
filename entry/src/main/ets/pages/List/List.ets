@@ -17,6 +17,14 @@ struct ListPage {
   //Component 生命周期
   aboutToAppear(): void {
     console.log(`${this.componentName} - aboutToAppear`)
+
+
+    // 初始化数据源。
+    for (let i = 0; i < 10; i++) {
+      this.arr.push(i)
+    }
+    // 前5个item的主轴大小不是默认大小100，因此需要通过ChildrenMainSize通知List。
+    this.listChildrenSize.splice(0, 5, [300, 300, 300, 300, 300])
   }
 
   aboutToDisappear(): void {
@@ -35,46 +43,52 @@ struct ListPage {
   // 支持（if/else、ForEach、LazyForEach和Repeat）
 
 
-  listScroller: ListScroller = new ListScroller()
-  scroller: Scroller = new Scroller()
+  // listScroller: ListScroller = new ListScroller()
+  // scroller: Scroller = new Scroller()
   @State lazyList: LazyDataSource<ListModel> = new LazyDataSource([]);
 
-  @State arr: string[] = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"]
-  @State alignListItem: ListItemAlign = ListItemAlign.Start
+  private arr: number[] = []
+  private scroller: ListScroller = new ListScroller()
+  @State listSpace: number = 10
+  @State listChildrenSize: ChildrenMainSize = new ChildrenMainSize(100)
 
   build() {
     Column() {
-      List({ space: 20, initialIndex: 0 }) {
-        ForEach(this.arr, (item: string, index) => {
+      List({ space: this.listSpace, initialIndex: 4, scroller: this.scroller }) {
+        ForEach(this.arr, (item: number) => {
           ListItem() {
-            Text('' + item)
-              .width('100%')
-              .height((index % 2 + 1) * 20)
+            Text('item-' + item)
+              .height( item < 5 ? 300 : this.listChildrenSize.childDefaultSize)
+              .width('90%')
               .fontSize(16)
               .textAlign(TextAlign.Center)
               .borderRadius(10)
               .backgroundColor(0xFFFFFF)
           }
-          .border({ width: 2, color: Color.Green })
         }, (item: string) => item)
       }
-      .height(300)
-      .width("90%")
-      .border({ width: 3, color: Color.Red })
-      .lanes({ minLength: 50, maxLength: 50 })
-      .alignListItem(this.alignListItem)
-      .scrollBar(BarState.Off)
-
-      Button("点击更改alignListItem:" + this.alignListItem).onClick(() => {
-        if (this.alignListItem == ListItemAlign.Start) {
-          this.alignListItem = ListItemAlign.Center
-        } else if (this.alignListItem == ListItemAlign.Center) {
-          this.alignListItem = ListItemAlign.End
-        } else {
-          this.alignListItem = ListItemAlign.Start
-        }
-      })
-    }.width('100%').height('100%').backgroundColor(0xDCDCDC).padding({ top: 5 })
+      .backgroundColor(Color.Gray)
+      .layoutWeight(1)
+      .scrollBar(BarState.On)
+      .childrenMainSize(this.listChildrenSize)
+      .alignListItem(ListItemAlign.Center)
+      Row(){
+        Button() { Text('item size + 50') }.onClick(()=>{
+          this.listChildrenSize.childDefaultSize += 50
+        }).height('50%').width('30%')
+        Button() { Text('item size - 50') }.onClick(()=>{
+          if (this.listChildrenSize.childDefaultSize === 0) {
+            return
+          }
+          this.listChildrenSize.childDefaultSize -= 50
+        }).height('50%').width('30%')
+        Button() { Text('scrollTo (0, 310)') }.onClick(()=>{
+          // 310: 跳转到item 1顶部与List顶部平齐的位置。
+          // 如果不设置childrenMainSize，item高度不一致时scrollTo会不准确。
+          this.scroller.scrollTo({xOffset: 0, yOffset: 310})
+        }).height('50%').width('30%')
+      }.height('20%')
+    }
   }
 
   @Builder

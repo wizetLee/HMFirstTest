@@ -146,12 +146,12 @@
     "Text"
   ],
   "entry/src/main/ets/pages/List/List.ets": [
-    "Scroller",
     "Column",
     "List",
     "ForEach",
     "ListItem",
     "Text",
+    "Row",
     "Button",
     "ListItemGroup",
     "LazyForEach",
