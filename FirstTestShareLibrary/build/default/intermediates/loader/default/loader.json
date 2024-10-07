@@ -1,0 +1,30 @@
+{
+  "modulePathMap": {
+    "entry": "/Users/wizet/Documents/HM/HMFirstTest/entry",
+    "FirstTestStaticLibrary": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary",
+    "FirstTestShareLibrary": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary"
+  },
+  "compileMode": "esmodule",
+  "projectRootPath": "/Users/wizet/Documents/HM/HMFirstTest",
+  "nodeModulesPath": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/loader_out/default/node_modules",
+  "byteCodeHarInfo": {},
+  "declarationEntry": [],
+  "moduleName": "FirstTestShareLibrary",
+  "hspNameOhmMap": {},
+  "harNameOhmMap": {},
+  "packageManagerType": "ohpm",
+  "compileEntry": [
+    "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/src/main/ets/pages/ExportTestEntry.ets",
+    "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/src/main/ets/pages/Index.ets",
+    "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/src/main/ets/utils/Calc.ets"
+  ],
+  "otherCompileFiles": [],
+  "dynamicImportLibInfo": {},
+  "routerMap": [],
+  "hspResourcesMap": {},
+  "anBuildOutPut": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/loader_out/default/an/arm64-v8a",
+  "anBuildMode": "type",
+  "patchConfig": {
+    "changedFileList": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/patch/default/changedFileList.json"
+  }
+}

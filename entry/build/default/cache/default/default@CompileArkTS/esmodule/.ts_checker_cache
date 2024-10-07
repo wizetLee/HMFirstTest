@@ -67,7 +67,8 @@
       "parent": [
         "/Users/wizet/FirstTest/entry/src/main/ets/entryability/EntryAbility.ets",
         "/Users/wizet/FirstTest/entry/src/main/ets/pages/Index.ets",
-        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/entryability/EntryAbility.ets"
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/entryability/EntryAbility.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/entryability/EntryAbility.ets"
       ],
       "error": false
     },
@@ -87,7 +88,9 @@
         "/Users/wizet/FirstTest/entry/src/main/ets/entryability/EntryAbility.ets",
         "/Users/wizet/FirstTest/entry/src/main/ets/entrybackupability/EntryBackupAbility.ets",
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/entryability/EntryAbility.ets",
-        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/entrybackupability/EntryBackupAbility.ets"
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/entrybackupability/EntryBackupAbility.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/entryability/EntryAbility.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/entrybackupability/EntryBackupAbility.ets"
       ],
       "error": false
     },
@@ -168,7 +171,16 @@
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/PopUpWindow/PopUpWindow.ets",
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/ModalTransition/ModalTransition.ets",
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/SafeArea/SafeArea.ets",
-        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Gesture/Gesture.ets"
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Gesture/Gesture.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/entryability/EntryAbility.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Home/HomePage.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Canvas/Canvas.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Gesture/Gesture.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Layout/Layout.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/State/State.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/PopUpWindow/PopUpWindow.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/ModalTransition/ModalTransition.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/SafeArea/SafeArea.ets"
       ],
       "error": false
     },
@@ -1334,7 +1346,8 @@
       "parent": [
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.multimedia.image.d.ts",
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/application/Context.d.ts",
-        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/entryability/EntryAbility.ets"
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/entryability/EntryAbility.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/entryability/EntryAbility.ets"
       ],
       "error": false
     },
@@ -1488,7 +1501,8 @@
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.arkui.UIContext.d.ts",
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts",
         "/Users/wizet/FirstTest/entry/src/main/ets/pages/Index.ets",
-        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Index.ets"
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Index.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Index.ets"
       ],
       "error": false
     },
@@ -3495,7 +3509,8 @@
       ],
       "parent": [
         "/Users/wizet/FirstTest/entry/src/main/ets/entrybackupability/EntryBackupAbility.ets",
-        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/entrybackupability/EntryBackupAbility.ets"
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/entrybackupability/EntryBackupAbility.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/entrybackupability/EntryBackupAbility.ets"
       ],
       "error": false
     },
@@ -3715,7 +3730,9 @@
         "/Users/wizet/FirstTest/entry/src/main/ets/entryability/EntryAbility.ets",
         "/Users/wizet/FirstTest/entry/src/main/ets/pages/PageOne.ets",
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/entryability/EntryAbility.ets",
-        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Home/HomePage.ets"
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Home/HomePage.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/entryability/EntryAbility.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Home/HomePage.ets"
       ],
       "error": false
     },
@@ -4795,7 +4812,8 @@
         "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.graphics.uiEffect.d.ts"
       ],
       "parent": [
-        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Home/HomePage.ets"
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/Home/HomePage.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Home/HomePage.ets"
       ],
       "error": false
     },
@@ -4987,7 +5005,9 @@
       ],
       "parent": [
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/pages/SafeArea/SafeArea.ets",
-        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/entryability/EntryAbility.ets"
+        "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/entryability/EntryAbility.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/entryability/EntryAbility.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/SafeArea/SafeArea.ets"
       ],
       "error": false
     },
@@ -5064,6 +5084,218 @@
       "mtimeMs": 1727689956285.3767,
       "children": [
         "/Users/wizet/Documents/HM/FirstTest/entry/src/main/ets/tool/LazyDataSource.ets"
+      ],
+      "parent": [],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/entryability/EntryAbility.ets": {
+      "mtimeMs": 1727741872016.7673,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.AbilityKit.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.PerformanceAnalysisKit.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.BasicServicesKit.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.resourceManager.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/hms/ets/kits/@kit.SpeechKit.d.ts"
+      ],
+      "parent": [],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/entrybackupability/EntryBackupAbility.ets": {
+      "mtimeMs": 1726459325953.1697,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.PerformanceAnalysisKit.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.CoreFileKit.d.ts"
+      ],
+      "parent": [],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Home/HomePage.ets": {
+      "mtimeMs": 1727741872018.0964,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkGraphics2D.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.BasicServicesKit.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts"
+      ],
+      "parent": [
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Index.ets"
+      ],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/Index.ets": {
+      "mtimeMs": 1727741871979.526,
+      "children": [
+        "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/src/main/ets/components/MainPage.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/src/main/ets/components/Tool.ets"
+      ],
+      "parent": [
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Index.ets"
+      ],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/Index.ets": {
+      "mtimeMs": 1727741871977.387,
+      "children": [
+        "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/src/main/ets/utils/Calc.ets"
+      ],
+      "parent": [
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Index.ets"
+      ],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Index.ets": {
+      "mtimeMs": 1727741872018.2874,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/api/@ohos.router.d.ts",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Home/HomePage.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/Index.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/Index.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/Index.ets"
+      ],
+      "parent": [],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/src/main/ets/components/MainPage.ets": {
+      "mtimeMs": 1727741871980.2024,
+      "children": [],
+      "parent": [
+        "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/Index.ets"
+      ],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/src/main/ets/components/Tool.ets": {
+      "mtimeMs": 1727741871980.2969,
+      "children": [],
+      "parent": [
+        "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/Index.ets"
+      ],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/src/main/ets/utils/Calc.ets": {
+      "mtimeMs": 1727741871978.186,
+      "children": [],
+      "parent": [
+        "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/Index.ets"
+      ],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Canvas/DataHistogram.ets": {
+      "mtimeMs": 1727741872017.1914,
+      "children": [],
+      "parent": [
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Canvas/Canvas.ets"
+      ],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Canvas/LinePaintModel.ets": {
+      "mtimeMs": 1727741872017.3123,
+      "children": [],
+      "parent": [
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Canvas/Canvas.ets"
+      ],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Canvas/Canvas.ets": {
+      "mtimeMs": 1727741872017.0032,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Canvas/DataHistogram.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Canvas/LinePaintModel.ets"
+      ],
+      "parent": [],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Swiper/SwiperContent.ets": {
+      "mtimeMs": 1727741872020.1648,
+      "children": [],
+      "parent": [
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Swiper/Swiper.ets"
+      ],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Swiper/Swiper.ets": {
+      "mtimeMs": 1727741872020.078,
+      "children": [
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Swiper/SwiperContent.ets"
+      ],
+      "parent": [],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Gesture/Gesture.ets": {
+      "mtimeMs": 1727741872017.6436,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts"
+      ],
+      "parent": [],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/Layout/Layout.ets": {
+      "mtimeMs": 1727741872018.4387,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts"
+      ],
+      "parent": [],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/tool/LazyDataSource.ets": {
+      "mtimeMs": 1727741872020.4202,
+      "children": [
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/tool/ObservedArray.ets"
+      ],
+      "parent": [
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/State/State.ets",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/List/List.ets"
+      ],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/State/State.ets": {
+      "mtimeMs": 1727741872019.902,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts",
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/tool/LazyDataSource.ets"
+      ],
+      "parent": [],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/tool/ObservedArray.ets": {
+      "mtimeMs": 1727741872020.5095,
+      "children": [],
+      "parent": [
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/tool/LazyDataSource.ets"
+      ],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/PopUpWindow/PopUpWindow.ets": {
+      "mtimeMs": 1727832501942.1335,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts"
+      ],
+      "parent": [],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/ModalTransition/ModalTransition.ets": {
+      "mtimeMs": 1727741872018.9585,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts"
+      ],
+      "parent": [],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/SafeArea/SafeArea.ets": {
+      "mtimeMs": 1727764163512.212,
+      "children": [
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/hms/ets/kits/@kit.SpeechKit.d.ts",
+        "/Applications/DevEco-Studio.app/Contents/sdk/HarmonyOS-NEXT-DB3/openharmony/ets/kits/@kit.ArkUI.d.ts"
+      ],
+      "parent": [],
+      "error": false
+    },
+    "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/pages/List/List.ets": {
+      "mtimeMs": 1728114247740.0435,
+      "children": [
+        "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/ets/tool/LazyDataSource.ets"
       ],
       "parent": [],
       "error": false

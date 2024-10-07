@@ -1,0 +1,26 @@
+{
+	"app": {
+		"bundleName": "com.example.firsttest",
+		"debug": true,
+		"versionCode": 1000000,
+		"versionName": "1.0.0",
+		"minAPIVersion": 50000012,
+		"targetAPIVersion": 50000012,
+		"apiReleaseType": "Beta3",
+		"compileSdkVersion": "5.0.0.36",
+		"compileSdkType": "HarmonyOS",
+		"appEnvironments": [],
+		"bundleType": "app"
+	},
+	"module": {
+		"name": "FirstTestStaticLibrary",
+		"type": "har",
+		"deviceTypes": [
+			"default",
+			"tablet",
+			"2in1",
+			"car"
+		],
+		"installationFree": false
+	}
+}

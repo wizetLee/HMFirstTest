@@ -1,0 +1,366 @@
+{
+  "ohos-module-entry": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "/Users/wizet/Documents/HM/HMFirstTest/entry/build",
+    "DEPENDENCY_INFO": {
+      "firstteststaticlibrary": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary"
+    },
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main",
+        "RESOURCES_PATH": [
+          "/Users/wizet/Documents/HM/HMFirstTest/entry/src/main/resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/outputs/default",
+          "INTERMEDIA_PATH": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates",
+          "JS_ASSETS_PATH": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates/loader_out/default",
+          "JS_LITE_ASSETS_PATH": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates/loader_out_lite/default",
+          "RES_PATH": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates/res/default",
+          "RES_PROFILE_PATH": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates/res/default/resources/base/profile",
+          "ETS_SUPER_VISUAL_PATH": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/cache/default/default@CompileArkTS/esmodule",
+          "JS_SUPER_VISUAL_PATH": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/cache/default/default@CompileJS/jsbundle",
+          "WORKER_LOADER": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates/loader/default/loader.json",
+          "MANIFEST_JSON": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates/manifest/default",
+          "OUTPUT_METADATA_JSON": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates/hap_metadata/default/output_metadata.json"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      },
+      "ohosTest": {
+        "SOURCE_ROOT": "/Users/wizet/Documents/HM/HMFirstTest/entry/src/ohosTest",
+        "RESOURCES_PATH": [
+          "/Users/wizet/Documents/HM/HMFirstTest/entry/src/ohosTest/resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/outputs/ohosTest",
+          "INTERMEDIA_PATH": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates",
+          "JS_ASSETS_PATH": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates/loader_out/ohosTest",
+          "JS_LITE_ASSETS_PATH": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates/loader_out_lite/ohosTest",
+          "RES_PATH": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates/res/ohosTest",
+          "RES_PROFILE_PATH": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates/res/ohosTest/resources/base/profile",
+          "ETS_SUPER_VISUAL_PATH": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/cache/ohosTest/ohosTest@OhosTestCompileArkTS/esmodule",
+          "JS_SUPER_VISUAL_PATH": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/cache/ohosTest/ohosTest@OhosTestCompileJS/jsbundle",
+          "WORKER_LOADER": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates/loader/ohosTest/loader.json",
+          "MANIFEST_JSON": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates/manifest/ohosTest",
+          "OUTPUT_METADATA_JSON": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates/hap_metadata/ohosTest/output_metadata.json"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default",
+        "arkOptions": {
+          "runtimeOnly": {}
+        },
+        "name": "debug"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {
+        "arkOptions": {
+          "runtimeOnly": {}
+        }
+      },
+      "buildOptionSet": [
+        {
+          "name": "release",
+          "arkOptions": {
+            "obfuscation": {
+              "ruleOptions": {
+                "enable": true,
+                "files": [
+                  "./obfuscation-rules.txt"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "name": "default"
+        },
+        {
+          "name": "debug"
+        }
+      ],
+      "targets": [
+        {
+          "name": "default"
+        },
+        {
+          "name": "ohosTest"
+        }
+      ]
+    }
+  },
+  "ohos-module-FirstTestStaticLibrary": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/build",
+    "DEPENDENCY_INFO": {},
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/src/main",
+        "RESOURCES_PATH": [
+          "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/src/main/resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/build/default/outputs/default",
+          "INTERMEDIA_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/build/default/intermediates",
+          "JS_ASSETS_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/build/default/intermediates/loader_out/default",
+          "JS_LITE_ASSETS_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/build/default/intermediates/loader_out_lite/default",
+          "RES_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/build/default/intermediates/res/default",
+          "RES_PROFILE_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/build/default/intermediates/res/default/resources/base/profile",
+          "ETS_SUPER_VISUAL_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/build/default/cache/default/default@HarCompileArkTS/esmodule",
+          "JS_SUPER_VISUAL_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/build/default/cache/default/default@HarCompileJS/jsbundle",
+          "WORKER_LOADER": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/build/default/intermediates/loader/default/loader.json",
+          "MANIFEST_JSON": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/build/default/intermediates/manifest/default",
+          "OUTPUT_METADATA_JSON": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary/build/default/intermediates/hap_metadata/default/output_metadata.json"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default",
+        "name": "debug"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "buildOptionSet": [
+        {
+          "name": "release",
+          "arkOptions": {
+            "obfuscation": {
+              "ruleOptions": {
+                "enable": false,
+                "files": [
+                  "./obfuscation-rules.txt"
+                ]
+              },
+              "consumerFiles": [
+                "./consumer-rules.txt"
+              ]
+            }
+          }
+        },
+        {
+          "name": "default"
+        },
+        {
+          "name": "debug"
+        }
+      ],
+      "targets": [
+        {
+          "name": "default"
+        },
+        {
+          "name": "ohosTest"
+        }
+      ]
+    }
+  },
+  "ohos-module-FirstTestShareLibrary": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build",
+    "DEPENDENCY_INFO": {},
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/src/main",
+        "RESOURCES_PATH": [
+          "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/src/main/resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/outputs/default",
+          "INTERMEDIA_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates",
+          "JS_ASSETS_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/loader_out/default",
+          "JS_LITE_ASSETS_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/loader_out_lite/default",
+          "RES_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/res/default",
+          "RES_PROFILE_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/res/default/resources/base/profile",
+          "ETS_SUPER_VISUAL_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/cache/default/default@CompileArkTS/esmodule",
+          "JS_SUPER_VISUAL_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/cache/default/default@CompileJS/jsbundle",
+          "WORKER_LOADER": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/loader/default/loader.json",
+          "MANIFEST_JSON": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/manifest/default",
+          "OUTPUT_METADATA_JSON": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/hsp_metadata/default/output_metadata.json"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      },
+      "ohosTest": {
+        "SOURCE_ROOT": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/src/ohosTest",
+        "RESOURCES_PATH": [
+          "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/src/ohosTest/resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/outputs/ohosTest",
+          "INTERMEDIA_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates",
+          "JS_ASSETS_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/loader_out/ohosTest",
+          "JS_LITE_ASSETS_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/loader_out_lite/ohosTest",
+          "RES_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/res/ohosTest",
+          "RES_PROFILE_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/res/ohosTest/resources/base/profile",
+          "ETS_SUPER_VISUAL_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/cache/ohosTest/ohosTest@OhosTestCompileArkTS/esmodule",
+          "JS_SUPER_VISUAL_PATH": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/cache/ohosTest/ohosTest@OhosTestCompileJS/jsbundle",
+          "WORKER_LOADER": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/loader/ohosTest/loader.json",
+          "MANIFEST_JSON": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/manifest/ohosTest",
+          "OUTPUT_METADATA_JSON": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/hsp_metadata/ohosTest/output_metadata.json"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default",
+        "name": "debug"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "buildOptionSet": [
+        {
+          "name": "release",
+          "arkOptions": {
+            "obfuscation": {
+              "ruleOptions": {
+                "enable": false,
+                "files": [
+                  "./obfuscation-rules.txt"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "name": "default"
+        },
+        {
+          "name": "debug"
+        }
+      ],
+      "targets": [
+        {
+          "name": "default"
+        },
+        {
+          "name": "ohosTest"
+        }
+      ]
+    }
+  },
+  "ohos-project": {
+    "SELECT_PRODUCT_NAME": "default",
+    "MODULE_BUILD_DIR": "/Users/wizet/Documents/HM/HMFirstTest/build",
+    "BUNDLE_NAME": "com.example.firsttest",
+    "BUILD_PATH": {
+      "OUTPUT_PATH": "/Users/wizet/Documents/HM/HMFirstTest/build/outputs/default"
+    },
+    "MODULES": [
+      {
+        "name": "entry",
+        "srcPath": "/Users/wizet/Documents/HM/HMFirstTest/entry",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ],
+        "belongProjectPath": "/Users/wizet/Documents/HM/HMFirstTest"
+      },
+      {
+        "name": "FirstTestStaticLibrary",
+        "srcPath": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary",
+        "belongProjectPath": "/Users/wizet/Documents/HM/HMFirstTest"
+      },
+      {
+        "name": "FirstTestShareLibrary",
+        "srcPath": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ],
+        "belongProjectPath": "/Users/wizet/Documents/HM/HMFirstTest"
+      }
+    ],
+    "PROFILE_OPT": {
+      "app": {
+        "signingConfigs": [],
+        "products": [
+          {
+            "name": "default",
+            "signingConfig": "default",
+            "compatibleSdkVersion": "5.0.0(12)",
+            "runtimeOS": "HarmonyOS"
+          }
+        ],
+        "buildModeSet": [
+          {
+            "name": "debug"
+          },
+          {
+            "name": "release"
+          }
+        ]
+      },
+      "modules": [
+        {
+          "name": "entry",
+          "srcPath": "./entry",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "FirstTestStaticLibrary",
+          "srcPath": "./FirstTestStaticLibrary"
+        },
+        {
+          "name": "FirstTestShareLibrary",
+          "srcPath": "./FirstTestShareLibrary",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CONFIG_PROPERTIES": {
+      "enableSignTask": true,
+      "skipNativeIncremental": false,
+      "hvigor.keepDependency": true
+    },
+    "OVERALL_PROJECT_PATHS": [
+      "/Users/wizet/Documents/HM/HMFirstTest"
+    ]
+  },
+  "version": 1
+}

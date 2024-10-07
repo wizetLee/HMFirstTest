@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FirstTestShareLibrary/FirstTestShareLibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/FirstTestShareLibrary/FirstTestShareLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FirstTestStaticLibrary/FirstTestStaticLibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/FirstTestStaticLibrary/FirstTestStaticLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HMFirstTest.iml" filepath="$PROJECT_DIR$/.idea/modules/HMFirstTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/entry/entry.iml" filepath="$PROJECT_DIR$/.idea/modules/entry/entry.iml" />
+    </modules>
+  </component>
+</project>

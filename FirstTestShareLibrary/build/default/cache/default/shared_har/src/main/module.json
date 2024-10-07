@@ -1,0 +1,1 @@
+{"app":{"bundleName":"com.example.firsttest","bundleType":"app","debug":true,"versionCode":1000000,"versionName":"1.0.0","minAPIVersion":50000012,"targetAPIVersion":50000012,"apiReleaseType":"Beta3"},"module":{"name":"FirstTestShareLibrary","type":"shared","deliveryWithInstall":true,"deviceTypes":["phone","tablet","2in1","car"],"dependencies":[]}}

@@ -1,12 +1,12 @@
 {
   "modulePathMap": {
-    "entry": "/Users/wizet/Documents/HM/FirstTest/entry",
-    "FirstTestStaticLibrary": "/Users/wizet/Documents/HM/FirstTest/FirstTestStaticLibrary",
-    "FirstTestShareLibrary": "/Users/wizet/Documents/HM/FirstTest/FirstTestShareLibrary"
+    "entry": "/Users/wizet/Documents/HM/HMFirstTest/entry",
+    "FirstTestStaticLibrary": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestStaticLibrary",
+    "FirstTestShareLibrary": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary"
   },
   "compileMode": "esmodule",
-  "projectRootPath": "/Users/wizet/Documents/HM/FirstTest",
-  "nodeModulesPath": "/Users/wizet/Documents/HM/FirstTest/entry/build/default/intermediates/loader_out/default/node_modules",
+  "projectRootPath": "/Users/wizet/Documents/HM/HMFirstTest",
+  "nodeModulesPath": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates/loader_out/default/node_modules",
   "byteCodeHarInfo": {},
   "declarationEntry": [],
   "moduleName": "entry",
@@ -20,11 +20,11 @@
   "dynamicImportLibInfo": {},
   "routerMap": [],
   "hspResourcesMap": {
-    "FirstTestShareLibrary": "/Users/wizet/Documents/HM/FirstTest/FirstTestShareLibrary/build/default/intermediates/res/default/ResourceTable.txt"
+    "FirstTestShareLibrary": "/Users/wizet/Documents/HM/HMFirstTest/FirstTestShareLibrary/build/default/intermediates/res/default/ResourceTable.txt"
   },
-  "anBuildOutPut": "/Users/wizet/Documents/HM/FirstTest/entry/build/default/intermediates/loader_out/default/an/arm64-v8a",
+  "anBuildOutPut": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates/loader_out/default/an/arm64-v8a",
   "anBuildMode": "type",
   "patchConfig": {
-    "changedFileList": "/Users/wizet/Documents/HM/FirstTest/entry/build/default/intermediates/patch/default/changedFileList.json"
+    "changedFileList": "/Users/wizet/Documents/HM/HMFirstTest/entry/build/default/intermediates/patch/default/changedFileList.json"
   }
 }

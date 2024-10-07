@@ -69,6 +69,7 @@ struct SafeAreapage {
           .width('100%')
           .backgroundImage($r('app.media.background'))
           .backgroundImageSize(ImageSize.Cover)
+          // 安全域处理
           .expandSafeArea([SafeAreaType.SYSTEM], [SafeAreaEdge.TOP, SafeAreaEdge.BOTTOM])
 
         Column() {

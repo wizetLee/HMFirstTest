@@ -1,0 +1,10 @@
+{
+  "FirstTestShareLibrary/src/main/ets/pages/ExportTestEntry.ets": [
+    "Column"
+  ],
+  "FirstTestShareLibrary/src/main/ets/pages/Index.ets": [
+    "Row",
+    "Column",
+    "Text"
+  ]
+}

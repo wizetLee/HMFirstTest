@@ -1,0 +1,19 @@
+{
+	"record":	[{
+			"type":	"string",
+			"name":	"app_name",
+			"id":	"0x01000000"
+		}, {
+			"type":	"media",
+			"name":	"app_icon",
+			"id":	"0x01000001"
+		}, {
+			"type":	"string",
+			"name":	"shared_desc",
+			"id":	"0x01000002"
+		}, {
+			"type":	"profile",
+			"name":	"main_pages",
+			"id":	"0x01000003"
+		}]
+}

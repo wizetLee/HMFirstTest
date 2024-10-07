@@ -1,0 +1,1 @@
+{"rootDependency":"./oh-package.json5","dependencyMap":{"entry":"./entry/oh-package.json5","FirstTestStaticLibrary":"./FirstTestStaticLibrary/oh-package.json5","FirstTestShareLibrary":"./FirstTestShareLibrary/oh-package.json5"}}

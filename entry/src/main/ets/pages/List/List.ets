@@ -23,8 +23,11 @@ struct ListPage {
     for (let i = 0; i < 10; i++) {
       this.arr.push(i)
     }
-    // 前5个item的主轴大小不是默认大小100，因此需要通过ChildrenMainSize通知List。
-    this.listChildrenSize.splice(0, 5, [300, 300, 300, 300, 300])
+
+    // 自定义尺寸
+    // 前2个item的主轴大小不是默认大小100，因此需要通过ChildrenMainSize通知List。
+    this.listChildrenSize.splice(0, 2, [300, 300])
+
   }
 
   aboutToDisappear(): void {
@@ -46,7 +49,6 @@ struct ListPage {
   // listScroller: ListScroller = new ListScroller()
   // scroller: Scroller = new Scroller()
   @State lazyList: LazyDataSource<ListModel> = new LazyDataSource([]);
-
   private arr: number[] = []
   private scroller: ListScroller = new ListScroller()
   @State listSpace: number = 10
@@ -54,40 +56,82 @@ struct ListPage {
 
   build() {
     Column() {
-      List({ space: this.listSpace, initialIndex: 4, scroller: this.scroller }) {
-        ForEach(this.arr, (item: number) => {
-          ListItem() {
-            Text('item-' + item)
-              .height( item < 5 ? 300 : this.listChildrenSize.childDefaultSize)
-              .width('90%')
-              .fontSize(16)
-              .textAlign(TextAlign.Center)
-              .borderRadius(10)
-              .backgroundColor(0xFFFFFF)
-          }
-        }, (item: string) => item)
+      List({
+        // space:
+        // initialIndex:
+        //         scroller:
+
+      }) {
+        ListItemGroup({
+          space: 5,
+          // header:
+          // footer:
+        }) {
+          ListItem()
+            .height(101)
+            .width(`100%`)
+            .backgroundColor(Color.Orange)
+        }
+
+        ListItemGroup() {
+          ListItem()
+            .height(101)
+            .width(`100%`)
+            .backgroundColor(Color.Blue)
+            // .editable() // editMode属性设置为true（从API9开始无需设置editMode属性）。
+            // .enabled()
+            // .selectable()
+        }
       }
-      .backgroundColor(Color.Gray)
-      .layoutWeight(1)
-      .scrollBar(BarState.On)
-      .childrenMainSize(this.listChildrenSize)
-      .alignListItem(ListItemAlign.Center)
-      Row(){
-        Button() { Text('item size + 50') }.onClick(()=>{
+      // .onItemMove()
+      // .onItemDrop()
+      .edgeEffect(EdgeEffect.Spring, {
+        alwaysEnabled: true,
+      })
+
+      // List({ space: this.listSpace, initialIndex: 4, scroller: this.scroller }) {
+      //   ForEach(this.arr, (item: number) => {
+      //     ListItem() {
+      //       Text('item-' + item)
+      //         .height( item < 2 ? 300 : this.listChildrenSize.childDefaultSize)
+      //         .width('90%')
+      //         .fontSize(16)
+      //         .textAlign(TextAlign.Center)
+      //         .borderRadius(10)
+      //         .backgroundColor(0xFFFFFF)
+      //     }
+      //     .selected(true)
+      //   }, (item: string) => item)
+      // }
+      // .backgroundColor(Color.Gray)
+      // .layoutWeight(1)
+      // .scrollBar(BarState.On)
+      // .childrenMainSize(this.listChildrenSize)
+      // .alignListItem(ListItemAlign.Center)
+      Row() {
+        Button() {
+          Text('item size + 50')
+        }.onClick(() => {
           this.listChildrenSize.childDefaultSize += 50
         }).height('50%').width('30%')
-        Button() { Text('item size - 50') }.onClick(()=>{
+
+        Button() {
+          Text('item size - 50')
+        }.onClick(() => {
           if (this.listChildrenSize.childDefaultSize === 0) {
             return
           }
           this.listChildrenSize.childDefaultSize -= 50
         }).height('50%').width('30%')
-        Button() { Text('scrollTo (0, 310)') }.onClick(()=>{
+
+        Button() {
+          Text('scrollTo (0, 310)')
+        }.onClick(() => {
           // 310: 跳转到item 1顶部与List顶部平齐的位置。
           // 如果不设置childrenMainSize，item高度不一致时scrollTo会不准确。
-          this.scroller.scrollTo({xOffset: 0, yOffset: 310})
+          this.scroller.scrollTo({ xOffset: 0, yOffset: 310, animation: true })
         }).height('50%').width('30%')
-      }.height('20%')
+      }.height('10%')
     }
   }
 

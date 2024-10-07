@@ -1,0 +1,42 @@
+{
+	"app": {
+		"bundleName": "com.example.firsttest",
+		"vendor": "example",
+		"versionCode": 1000000,
+		"versionName": "1.0.0",
+		"icon": "$media:app_icon",
+		"label": "$string:app_name",
+		"description": "这是一个测试应用",
+		"appEnvironments": [
+			{
+				"name": "name1",
+				"value": "value1"
+			}
+		],
+		"apiReleaseType": "Beta3",
+		"compileSdkVersion": "5.0.0.36",
+		"targetAPIVersion": 50000012,
+		"minAPIVersion": 50000012,
+		"compileSdkType": "HarmonyOS",
+		"bundleType": "app",
+		"debug": true
+	},
+	"module": {
+		"name": "FirstTestShareLibrary",
+		"type": "shared",
+		"description": "$string:shared_desc",
+		"deviceTypes": [
+			"phone",
+			"tablet",
+			"2in1",
+			"car"
+		],
+		"deliveryWithInstall": true,
+		"pages": "$profile:main_pages",
+		"packageName": "firsttestsharelibrary",
+		"installationFree": false,
+		"virtualMachine": "ark12.0.2.0",
+		"compileMode": "esmodule",
+		"dependencies": []
+	}
+}
